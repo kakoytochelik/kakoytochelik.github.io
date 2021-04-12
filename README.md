@@ -3,7 +3,7 @@
 Сайты:
 
 * [InterTekh](https://kakoytochelik.github.io/InterTekh/) - старый сайт логистической компании "ИнтерТех", создан на чистых HTML + CSS + элементы JS и форма обратной связи на PHP (php часть не моя, но я адаптировал под требования заказчика). Без адаптивного дизайна. 
-* [Институт пассивного дома](https://passivrus.ru/) - сайт ИПД на WordPress, перенос контента [отсюда](http://www.passiv-rus.ru/)
+* [Институт пассивного дома](https://passivrus.ru/) - сайт ИПД на WordPress (WPBakery, PageBuilder, WooCommerce, Autoptimize), перенос контента [отсюда](http://www.passiv-rus.ru/). 
 * UberPartners - некоммерческий сайт, скорее "проба пера", использованы Bootstrap-Grid, препроцессор Sass. Адаптивный дизайн.
 * ...
 
