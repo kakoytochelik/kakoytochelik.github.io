@@ -29,13 +29,11 @@
     });
   </script>
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <script type="text/javascript" src="js/sticky.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="js/btnup.js"></script>
+  <script type="text/javascript" src="js/change-bg-sea.js"></script>
 </head>
-
-
-
-
-
-
 
 <body class="sea">
   <!--==========ШАПКА==========-->
@@ -55,8 +53,6 @@
         <!--a class="header-phone3" href="javascript:void(0);">+7 (495) 890-12-34</a-->
       </div>
     </div>
-
-
     <section class="dropmenu" id="FloatingMenu">
       <div class="dropmenubg">
         <div class="menu">
@@ -86,8 +82,6 @@
                 </div>
               </div>
             </li>
-
-
             <li>
               <div class="dropdown">
                 <a class="fakelink" href="cargotype.html">Типы грузов</a>
@@ -121,24 +115,17 @@
                 </div>
               </div>
             </li>
-
-
-
             <li>
               <div class="dropdown">
                 <a class="fakelink" href="index.html#geo">География перевозок</a>
               </div>
             </li>
-
             <li>
               <div class="dropdown">
                 <a class="fakelink" href="export.html">Экспорт</a>
 
               </div>
             </li>
-
-
-
             <li>
               <div class="dropdown">
                 <a class="fakelink" href="index.html#about">О компании</a>
@@ -150,10 +137,7 @@
     </section>
     <div class="wrapper-down"></div>
   </header>
-
-
   <!-- ///////////КОНЕЦ ШАПКИ////////////// -->
-
   <div class="parallax10">
     <p class="blockhead"><b>Морские перевозки</b></p>
     <div class="infoblock">
@@ -165,14 +149,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
   <!--div class="parblock"-->
   <div class="parallax10">
     <div class="infoblock">
@@ -200,7 +176,6 @@
         <br />
         <br />
         <br />
-
       </div>
     </div>
   </div>
@@ -210,17 +185,13 @@
       <div class="textblock1">
         <p>
           <b>
-
             Особое внимание мы уделяем экспорту товаров из России, как наиболее востребованной услуги. Мы готовы предоставить сервис по всем направлениям отгрузок, включая отгрузки мелкотоварных партий в сборных контейнерах отправлением из портов
             Санкт-Петербург и Владивосток с оказанием помощи в таможенном оформлении экспортной документации.
-
           </b>
         </p>
       </div>
     </div>
   </div>
-
-
 
   <!--div class="parblock"-->
   <div class="parallax11" id="form">
@@ -248,15 +219,12 @@
               <p><input type="number" id="itemmass" name="itemmass" class="txt" placeholder="Вес (кг)"></p>
             </div>
           </div>
-
-
           <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
           <button id="send">Отправить</button>
         </form>
       </div>
     </div>
   </div>
-
 
   <div class="buttons">
     <a class="btnup" href="#top"><img class="imgup" src="images/up.png"></a>
@@ -265,9 +233,6 @@
     <br />
     <a class="btndwn" href="#forma"><img src="images/msg.png"></a>
   </div>
-
-
-
 
   <div class="footblock">
     <div class="copyblock">
@@ -287,170 +252,9 @@
         <li><a rel="nofollow" target="_blank" href="" title="Официальная страница в Facebook"><i class="icon-FB"></i></a></li-->
           <li id="firstsoc"><a rel="nofollow" target="_blank" href="https://www.instagram.com/intertekh/" title="Официальная страница в Instagram"><img class="soc-icon" src="images/logoIG.png"></a></li>
           <li><a class="icon-skype" rel="nofollow" target="_blank" href="skype:incotectsm?chat" title="Профиль Skype"><img class="soc-icon" src="images/logoskype.png"></a></li>
-
         </ul>
       </div>
     </div>
-
   </div>
-
-
-
-
-
-
-
-  <!--скрипты-->
-
-  <script>
-    $(function() {
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-          $('.sea').addClass('changebg1sea')
-        }
-        if ($(this).scrollTop() < 250) {
-          $('.sea').removeClass('changebg1sea')
-        }
-
-
-        if ($(this).scrollTop() > 175) {
-          $(".btnup").fadeIn("slow", function() {});
-        }
-        if ($(this).scrollTop() < 175) {
-          $(".btnup").fadeOut("slow", function() {});
-        }
-      })
-
-    });
-  </script>
-
-
-
-  <script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {
-      myFunction()
-    };
-
-    // Get the header
-    var dropmenu = document.getElementById("FloatingMenu");
-
-    // Get the offset position of the navbar
-    var sticky = dropmenu.offsetTop;
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        dropmenu.classList.add("sticky");
-      } else {
-        dropmenu.classList.remove("sticky");
-      }
-    }
-  </script>
-
-
-
-
-
-
-  <script type="text/javascript">
-    function validateEmail(email) {
-      var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return reg.test(email);
-    }
-
-    $(document).ready(function() {
-      $("#contact").submit(function() {
-        return false;
-      });
-      $("#send").on("click", function() {
-        var emailval = $("#email").val();
-        var namevl = $("#name").val();
-        var phonevl = $("#phone").val();
-        var itmname = $("#itemname").val();
-        var shipfr = $("#shipfrom").val();
-        var shipto = $("#shipto").val();
-        var itmmass = $("#itemmass").val();
-        var msgval = $("#msg").val();
-
-
-        var namelen = namevl.length;
-        var phonelen = phonevl.length;
-        var itemlen = itmname.length;
-        var frlen = shipfr.length;
-        var tolen = shipto.length;
-        var masslen = itmmass.length;
-        var mailvalid = validateEmail(emailval);
-
-        if (mailvalid == false) {
-          $("#email").addClass("error");
-        } else if (mailvalid == true) {
-          $("#email").removeClass("error");
-        }
-        if (namelen < 2) {
-          $("#name").addClass("error");
-        } else if (namelen >= 2) {
-          $("#name").removeClass("error");
-        }
-        if (phonelen < 6) {
-          $("#phone").addClass("error");
-        } else if (phonelen >= 6) {
-          $("#phone").removeClass("error");
-        }
-
-
-        if (itemlen < 2) {
-          $("#itemname").addClass("error");
-        } else if (itemlen >= 2) {
-          $("#itemname").removeClass("error");
-        }
-        if (frlen < 2) {
-          $("#shipfrom").addClass("error");
-        } else if (frlen >= 2) {
-          $("#shipfrom").removeClass("error");
-        }
-        if (tolen < 2) {
-          $("#shipto").addClass("error");
-        } else if (tolen >= 2) {
-          $("#shipto").removeClass("error");
-        }
-        if (masslen < 1) {
-          $("#itemmass").addClass("error");
-        } else if (masslen >= 1) {
-          $("#itemmass").removeClass("error");
-        }
-
-
-
-        if (mailvalid == true && itemlen >= 2 && frlen >= 2 && tolen >= 2 && masslen >= 1 && phonelen >= 6) {
-          // если обе проверки пройдены
-          // сначала мы скрываем кнопку отправки
-          $("#send").replaceWith("<em>отправка...</em>");
-          $.ajax({
-            type: 'POST',
-            url: 'sendmessage.php',
-            data: $("#contact").serialize(),
-            success: function(data) {
-              if (data == "true") {
-                $("#contact").fadeOut("fast", function() {
-                  $(this).before("<p style='text-align:center;'><strong><h2>Ваше сообщение отправлено!</h2></strong></p>");
-
-                });
-              }
-            }
-          });
-        }
-      });
-    });
-  </script>
-
-
-
-
-
-
-
-
 </body>
-
 </html>
