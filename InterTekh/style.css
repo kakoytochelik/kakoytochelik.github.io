@@ -30,12 +30,12 @@ body {
   -webkit-transition: 0.2s all;
 }
 
-body_hide {
+.body_hide {
   opacity: 0;
   transition: 1s opacity ease-in-out;
 }
 
-body_visible {
+.body_visible {
   opacity: 1;
 }
 
