@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
 .container {
     margin: 0 auto;
     width: 1140px;
