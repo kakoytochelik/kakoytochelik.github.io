@@ -20,7 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.slideshow_hidden').removeClass('slideshow_item');
         setTimeout(function(){
             $('.info').removeClass('info_display');
+            $('.slideshow_hidden img').attr("src", 'img/carousel/1.jpg');
           }, 400);
+
     });
     $('.popup_close').click(function (e) {
         if (e.target !== this)
@@ -31,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
         $('.slideshow_hidden').removeClass('slideshow_item');
         setTimeout(function(){
             $('.info').removeClass('info_display');
+            $('.slideshow_hidden img').attr("src", 'img/carousel/1.jpg');
           }, 400);
-        
     });
 })
