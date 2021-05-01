@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
           }, 10);
           setTimeout(function(){
             $('.slideshow_hidden').addClass('slideshow_item');
-          }, 1200);
+          }, 700);
         
     });
     $('.info').click(function (e) {
