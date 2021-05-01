@@ -38,4 +38,12 @@ window.addEventListener('DOMContentLoaded', () => {
             .find('.card_content')
         .removeClass('card_content_visible');
     });
+    $('body').on('touchmove', function() {
+        $(this)
+            .find('.card_background')
+        .removeClass('card_background_hover');
+        $(this)
+            .find('.card_content')
+        .removeClass('card_content_visible');
+    });
 })
