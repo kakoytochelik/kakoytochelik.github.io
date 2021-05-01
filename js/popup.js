@@ -6,7 +6,10 @@ window.addEventListener('DOMContentLoaded', () => {
             $('.info').addClass('info_show');
             $('.about_me').addClass('about_me_popup');
           }, 10);
-        $('.slideshow_hidden').addClass('slideshow_item');
+          setTimeout(function(){
+            $('.slideshow_hidden').addClass('slideshow_item');
+          }, 1200);
+        
     });
     $('.info').click(function (e) {
         if (e.target !== this)
