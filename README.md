@@ -2,7 +2,7 @@
 
 # Сайты:
 
-* [Страница Портфолио](kakoytochelik.github.io)
+* [Страница Портфолио](https://kakoytochelik.github.io/)
 * [WordPress Интенсив](https://kakoytochelik.github.io/WPCoursesLanding/) - простой лендинг на чистых HTML и CSS
 * [InterTekh](https://kakoytochelik.github.io/InterTekh/) - старый сайт логистической компании "ИнтерТех", создан на чистых HTML + CSS + элементы JS и форма обратной связи на PHP (php часть не моя, но я адаптировал под требования заказчика). Без адаптивного дизайна. 
 * [Институт пассивного дома](https://passivrus.ru/) - сайт ИПД на WordPress (WPBakery, PageBuilder, WooCommerce, Autoptimize), перенос и оптимизация контента [отсюда](http://www.passiv-rus.ru/). 
