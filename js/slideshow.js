@@ -6,10 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
         var currentImage = images[index];
         index = (index == maxImages) ? 0 : ++index;
         $('.slideshow_item img').fadeOut(700, function() {
-            $('.slideshow_item img').attr("src", 'img/carousel/'+currentImage);
-            setTimeout(function(){
-                $('.slideshow_item img').fadeIn(700);
-            }, 100);
+            $('.slideshow_item img').attr("src", 'img/carousel/'+ function() {
+            $('.slideshow_item img').fadeIn(700);
         });
     }, 4000);
 })
