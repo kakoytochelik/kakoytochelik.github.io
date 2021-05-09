@@ -5,9 +5,11 @@ window.addEventListener('DOMContentLoaded', () => {
     var timer = setInterval(function() {
         var currentImage = images[index];
         index = (index == maxImages) ? 0 : ++index;
-        $('.slideshow_item img').fadeOut(1000, function() {
-            $('.slideshow_item img').attr("src", 'img/carousel/'+currentImage);
-            $('.slideshow_item img').fadeIn(1000);
+        $('.slideshow_item img').fadeOut(700, function() {
+            setTimeout(function(){
+                $('.slideshow_item img').attr("src", 'img/carousel/'+currentImage);
+            }, 100);
+            $('.slideshow_item img').fadeIn(700);
         });
     }, 4000);
 })
