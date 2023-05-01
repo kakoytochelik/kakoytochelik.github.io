@@ -9,7 +9,7 @@
 * ["UberPartners"](https://kakoytochelik.github.io/UberPartners/) - Simple langing from the training course. Used Bootstrap-Grid, Sass preprocessor. Adaptive design.
 * ...
 
-# Утилиты:
+# Utilities:
 
 * [@PyPassGen_Bot](https://t.me/pypassgen_bot) - Telegram bot that generates passwords. Two options - quick generation, and generation with a password length and (optionally) the name of the service for which the password is generated (for password management directly in Telegram). It is written in Python using the python-telegram-bot library.
 * [PassGen](https://github.com/kakoytochelik/kakoytochelik.github.io/tree/main/passgen) - A simple console password generator in Python. There are two options: the first - quick generation with saving to the clipboard, the second - with filling in the service name (can automatically take the address from the clipboard) and specifying the password length; saves both to the clipboard and to a local text file. Uses numbers and letters of different case. Created it "out of nothing to do" for myself, as sometimes the browser does not offer to generate a password, and existing generators create passwords "ugly" format.
