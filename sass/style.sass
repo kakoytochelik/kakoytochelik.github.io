@@ -39,15 +39,29 @@ nav
 	font-weight: bold 
 	font-size: 40px 
 	line-height: 40px 
-	transition: all 0.5s ease-in-out 
-.profile,
-.popup_close 
-	display: block 
+	transition: all 0.5s ease-in-out
+
+.links
+	display: flex
+	justify-content: space-between
+	align-items: right
+
+.github_link
+	margin: 0 15px 0 0
 	width: 65px 
 	height: 65px 
-	cursor: pointer 
+	cursor: pointer
+	opacity: 80%
+	background: url("../icons/github.webp") center center/cover no-repeat 
+
+.profile
+	width: 65px 
+	height: 65px 
+	cursor: pointer
+	opacity: 85%
 	background: url("../icons/alex1.webp") center center/cover no-repeat 
 .popup_close 
+	display: block 
 	width: 25px 
 	height: 25px 
 	background: url("../icons/close.svg") center center/cover no-repeat 
