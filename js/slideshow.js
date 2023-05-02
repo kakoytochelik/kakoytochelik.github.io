@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-     var images = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'],
+     var images = ['1.webp','2.webp','3.webp','4.webp','5.webp','6.webp','7.webp','8.webp','9.webp'],
          index = 1, 
          maxImages = images.length - 1;
      var timer = setInterval(function() {
