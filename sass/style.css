@@ -1,9 +1,10 @@
 * {
   font-family: "SFProDisplay", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-div[class^="col-"] {
-  -webkit-transition: all 0.5s ease-in-out;
+div[class^=col-] {
   transition: all 0.5s ease-in-out;
 }
 
@@ -13,14 +14,8 @@ div[class^="col-"] {
 
 body {
   background-color: #f2f2f2;
-  -webkit-transition: background-color 1s;
   transition: background-color 1s;
   overflow: auto;
-  scrollbar-width: none;
-}
-
-.body_bg_white {
-  background-color: #fff;
 }
 
 .body_stop_scroll {
@@ -29,41 +24,37 @@ body {
 
 header {
   z-index: 3;
-  height: 85px;
+  height: 95px;
+  transition: all 0.5s ease-in-out;
 }
-
 header .container {
   max-width: 1140px;
-  height: 85px;
+  height: 95px;
 }
 
 nav {
   position: fixed;
   width: 100%;
-  height: 85px;
+  height: 95px;
   background-color: rgba(242, 242, 242, 0.6);
   z-index: 3;
-  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.5s ease-in-out;
+}
+
+.nav_blur {
   backdrop-filter: blur(16px);
-  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.5s ease-in-out;
 }
 
 .container {
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .header_content {
-  height: 85px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 95px;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -73,39 +64,50 @@ nav {
   font-weight: bold;
   font-size: 40px;
   line-height: 40px;
-  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.profile,
-.popup_close {
-  display: block;
-  width: 35px;
-  height: 35px;
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.github_link {
+  margin: 0 15px 0 0;
+  width: 65px;
+  height: 65px;
   cursor: pointer;
-  background: url("../icons/user.svg") center center/cover no-repeat;
+  opacity: 80%;
+  background: url("../icons/github.webp") center center/cover no-repeat;
+}
+
+.profile {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  opacity: 85%;
+  background: url("../icons/alex1.webp") center center/cover no-repeat;
 }
 
 .popup_close {
+  display: block;
   width: 25px;
   height: 25px;
+  cursor: pointer;
   background: url("../icons/close.svg") center center/cover no-repeat;
 }
 
 .info {
   display: none;
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   position: fixed;
   top: 0;
   z-index: 9;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   overflow: hidden;
   overflow-y: hidden;
 }
@@ -114,65 +116,51 @@ nav {
   display: block;
 }
 
-.info_show {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 .about_me {
   padding: 15px 30px;
   z-index: 10;
   position: fixed;
   display: block;
-  height: 700px;
-  width: 1000px;
+  height: 800px;
+  width: 1100px;
   background-color: #fff;
   border-radius: 15px;
   top: 150%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.5s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out, height 0.3s ease-in-out,nwidth 0.3s ease-in-out;
-  transition: all 0.5s ease-in-out, height 0.3s ease-in-out,nwidth 0.3s ease-in-out;
-  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease, height 0.3s ease, width 0.3s ease;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-
 .about_me a {
   color: #000;
   font-weight: 600;
 }
-
 .about_me span {
   display: block;
 }
-
 .about_me .mobile_available {
   display: none;
 }
-
 .about_me .container .row {
-  -webkit-box-shadow: none;
   box-shadow: none;
-  -webkit-transition: -webkit-box-shadow 2s;
-  transition: -webkit-box-shadow 2s;
   transition: box-shadow 2s;
-  transition: box-shadow 2s, -webkit-box-shadow 2s;
+}
+
+.info_show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 .about_me_descr {
   margin-bottom: 10px;
+  font-size: 1.05rem;
 }
 
 .popup_header {
   margin-bottom: 25px;
   height: 55px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -181,20 +169,11 @@ nav {
 }
 
 .inst_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 
 .inst_title {
@@ -220,12 +199,9 @@ nav {
   height: 240px;
   padding: 10px;
   margin-bottom: 20px;
-  z-index: 9999;
 }
-
 .slideshow img {
   width: 100%;
-  -webkit-box-shadow: 0 0px 30px 15px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0px 30px 15px rgba(0, 0, 0, 0.1);
   z-index: 9999;
 }
@@ -240,8 +216,10 @@ nav {
 }
 
 .cards {
-  -webkit-transition: margin 0.5s ease-in-out;
-  transition: margin 0.5s ease-in-out;
+  margin: 10px 0 0 0;
+  transition: margin 0.5s ease-in-out, filter 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
+  filter: blur(0px);
 }
 
 .card_container {
@@ -253,76 +231,74 @@ nav {
   overflow: hidden;
   border-radius: 15px;
   position: relative;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: margin 0.5s ease-in-out;
   transition: margin 0.5s ease-in-out;
 }
 
 .card_background {
   display: block;
-  -webkit-transform: scale(1);
   transform: scale(1);
   width: 335px;
   height: 390px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
-  -webkit-filter: blur(0px);
   filter: blur(0px);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-box-shadow: 0px -81px 25px -63px rgba(0, 0, 0, 0.17) inset;
   box-shadow: 0px -81px 25px -63px rgba(0, 0, 0, 0.17) inset;
 }
 
 .card_background_hover {
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-filter: blur(10px);
   filter: blur(10px);
 }
 
 .card_1 {
-  background: url("../img/wp.jpg") center center/cover no-repeat;
+  background: url("../img/wp.webp") center center/cover no-repeat;
 }
 
 .card_2 {
-  background: url("../img/ikh.jpg") center center/cover no-repeat;
+  background: url("../img/ikh.webp") center center/cover no-repeat;
 }
 
 .card_3 {
-  background: url("../img/up.jpg") center center/cover no-repeat;
+  background: url("../img/up.webp") center center/cover no-repeat;
 }
 
 .card_4 {
-  background: url("../img/ipd.jpg") center center/cover no-repeat;
+  background: url("../img/ipd.webp") center center/cover no-repeat;
 }
 
 .card_5 {
-  background: url("../img/tgpass.jpg") center center/cover no-repeat;
+  background: url("../img/tetris.webp") center center/cover no-repeat;
 }
 
 .card_6 {
-  background: url("../img/tgpano.jpg") center center/cover no-repeat;
+  background: url("../img/tgpass.webp") center center/cover no-repeat;
+}
+
+.card_7 {
+  background: url("../img/tgpano.webp") center center/cover no-repeat;
+}
+
+.card_8 {
+  background: url("../img/ps.webp") center center/cover no-repeat;
+}
+
+.card_9 {
+  background: url("../img/shortcuts.webp") center center/cover no-repeat;
+}
+
+.background_blur {
+  filter: blur(25px);
+  transition: all 0.5s ease;
 }
 
 .card_content {
   padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 0px;
   width: 100%;
@@ -333,9 +309,7 @@ nav {
   position: absolute;
   z-index: 3;
   bottom: -150px;
-  -webkit-box-shadow: 0px 26px 30px 68px rgba(255, 255, 255, 0.6);
   box-shadow: 0px 26px 30px 68px rgba(255, 255, 255, 0.6);
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -348,10 +322,9 @@ nav {
   width: 140px;
   opacity: 80%;
 }
-
 .card_title img {
-  width: 100%;
-  height: auto;
+  width: 140px;
+  height: 79px;
 }
 
 .card_descr {
@@ -369,15 +342,14 @@ nav {
     height: 360px;
   }
 }
-
 @media (max-width: 576px) {
   .card {
     border-radius: 20px;
   }
 }
-
 @media (max-width: 767px) {
   nav {
+    background-color: rgba(242, 242, 242, 0);
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
   }
@@ -399,8 +371,7 @@ nav {
     left: 0;
     padding: 30px 15px;
     overflow-y: scroll;
-    -webkit-box-shadow: 0px -49px 11px -21px #fff inset, 0px 49px 11px -21px #fff inset;
-            box-shadow: 0px -49px 11px -21px #fff inset, 0px 49px 11px -21px #fff inset;
+    box-shadow: 0px -49px 11px -21px #fff inset, 0px 49px 11px -21px #fff inset;
   }
   .about_me .container .row .inst_title,
   .about_me .container .row .about_me_descr {
@@ -413,9 +384,6 @@ nav {
     font-weight: normal;
     text-decoration: none;
   }
-  .about_me .mobile_not_available {
-    display: none;
-  }
   .about_me .mobile_available {
     display: block;
   }
@@ -424,7 +392,6 @@ nav {
     padding-bottom: 0px;
   }
 }
-
 @media (min-width: 768px) {
   .title {
     margin: 0 0 0 40px;
@@ -436,7 +403,6 @@ nav {
     margin: 10px auto 40px auto;
   }
 }
-
 @media (min-width: 1201px) {
   .title {
     margin: 0 0 0 0;
@@ -444,8 +410,21 @@ nav {
   .profile {
     margin: 0 0 0 0;
   }
+  .about_me .container .row {
+    position: absolute;
+    top: 75px;
+    height: 90%;
+    padding: 30px 15px;
+    overflow-y: scroll;
+    box-shadow: 0px -49px 11px -21px #fff inset, 0px 49px 11px -21px #fff inset;
+  }
+  .about_me .container .row .inst_title,
+  .about_me .container .row .about_me_descr {
+    position: relative;
+    z-index: -1;
+    pointer-events: all;
+  }
 }
-
 @media (max-width: 1200px) {
   .title, .popup_title {
     font-size: 32px;
@@ -463,14 +442,26 @@ nav {
     height: 55px;
     position: relative;
     z-index: 42;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
     margin-bottom: 10px;
   }
   .info {
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+  .about_me .container .row {
+    position: absolute;
+    top: 55px;
+    height: 90%;
+    left: 0;
+    padding: 30px 15px;
+    overflow-y: scroll;
+    box-shadow: 0px -49px 11px -21px #fff inset, 0px 49px 11px -21px #fff inset;
+  }
+  .about_me .container .row .inst_title,
+  .about_me .container .row .about_me_descr {
+    position: relative;
+    z-index: -1;
+    pointer-events: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

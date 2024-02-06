@@ -11,10 +11,12 @@ body
 	transition: background-color 1s 
 	overflow: auto
 .body_stop_scroll 
-	overflow: hidden 
+	overflow: hidden
+
 header 
 	z-index: 3 
 	height: 95px 
+	transition: all 0.5s ease-in-out
 	.container 
 		max-width: 1140px 
 		height: 95px 
@@ -23,9 +25,12 @@ nav
 	width: 100% 
 	height: 95px 
 	background-color: rgba(242, 242, 242, 0.6) 
-	z-index: 3 
+	z-index: 3
+	transition: all 0.5s ease-in-out
+.nav_blur
 	backdrop-filter: blur(16px) 
-	transition: all 0.5s ease-in-out 
+	-webkit-backdrop-filter: blur(16px)
+	transition: all 0.5s ease-in-out
 .container 
 	transition: all 0.5s ease-in-out 
 .header_content 
@@ -69,15 +74,13 @@ nav
 .info 
 	display: none 
 	visibility: hidden 
-	opacity: 0 
+	opacity: 1
 	position: fixed 
 	top: 0 
 	z-index: 9 
 	height: 100% 
 	width: 100% 
-	background-color: rgba(0, 0, 0, 0.25) 
-	backdrop-filter: blur(50px) 
-	transition: all 0.5s ease-in-out
+	transition: all 0.5s ease
 	overflow: hidden 
 	overflow-y: hidden 
 .info_display 
@@ -94,7 +97,7 @@ nav
 	top: 150% 
 	left: 50% 
 	transform: translate(-50%, -50%)
-	transition: all 0.5s ease-in-out, height 0.3s ease-in-out, width 0.3s ease-in-out 
+	transition: all 0.5s ease, height 0.3s ease, width 0.3s ease
 	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2) 
 	overflow: hidden 
 	a 
@@ -108,11 +111,6 @@ nav
 		.row
 			box-shadow: none 
 			transition: box-shadow 2s
-
-.hidden_attribute
-	visibility: hidden
-	opacity: 0
-	transition: all 0.5s ease-in-out
 
 .info_show 
 	visibility: visible 
@@ -166,7 +164,9 @@ nav
 	z-index: 9999 
 .cards
 	margin: 10px 0 0 0
-	transition: margin 0.5s ease-in-out 
+	transition: margin 0.5s ease-in-out, filter 0.5s ease-in-out, background-color 0.5s ease-in-out
+	background-color: rgba(0, 0, 0, 0.0) 
+	filter: blur(0px) 
 .card_container 
 	margin: 20px auto 
 	margin-top: 30px 
@@ -210,6 +210,10 @@ nav
 	background: url("../img/ps.webp") center center/cover no-repeat 
 .card_9
 	background: url("../img/shortcuts.webp") center center/cover no-repeat 
+.background_blur
+	filter: blur(25px) 
+	transition: all 0.5s ease
+	// background-color: rgba(0, 0, 0, 0.25) 
 .card_content 
 	padding: 0 15px 
 	display: flex 
