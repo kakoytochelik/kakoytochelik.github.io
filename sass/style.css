@@ -150,7 +150,7 @@ nav {
 .info_show {
   visibility: visible;
   opacity: 1;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .about_me_descr {
@@ -246,47 +246,14 @@ nav {
   filter: blur(0px);
   backface-visibility: hidden;
   box-shadow: 0px -81px 25px -63px rgba(0, 0, 0, 0.17) inset;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 
 .card_background_hover {
   transform: scale(1.2);
   filter: blur(10px);
-}
-
-.card_1 {
-  background: url("../img/wp.webp") center center/cover no-repeat;
-}
-
-.card_2 {
-  background: url("../img/ikh.webp") center center/cover no-repeat;
-}
-
-.card_3 {
-  background: url("../img/up.webp") center center/cover no-repeat;
-}
-
-.card_4 {
-  background: url("../img/ipd.webp") center center/cover no-repeat;
-}
-
-.card_5 {
-  background: url("../img/tetris.webp") center center/cover no-repeat;
-}
-
-.card_6 {
-  background: url("../img/tgpass.webp") center center/cover no-repeat;
-}
-
-.card_7 {
-  background: url("../img/tgpano.webp") center center/cover no-repeat;
-}
-
-.card_8 {
-  background: url("../img/ps.webp") center center/cover no-repeat;
-}
-
-.card_9 {
-  background: url("../img/shortcuts.webp") center center/cover no-repeat;
 }
 
 .background_blur {
@@ -358,6 +325,7 @@ nav {
   }
   .about_me {
     padding: 5px 15px;
+    transition: all 0.4s ease, height 0.3s ease, width 0.3s ease;
   }
   .about_me .container {
     display: block;
@@ -390,6 +358,10 @@ nav {
   .inst_wrapper {
     margin: 0px 0;
     padding-bottom: 0px;
+  }
+  .background_blur {
+    filter: none;
+    transition: all 0.3s ease;
   }
 }
 @media (min-width: 768px) {
