@@ -84,6 +84,7 @@ nav
 	overflow: hidden 
 	overflow-y: hidden 
 .info_display 
+	visibility: visible 
 	display: block 
 .about_me
 	padding: 15px 30px 
@@ -111,12 +112,6 @@ nav
 		.row
 			box-shadow: none 
 			transition: box-shadow 2s
-
-.info_show 
-	visibility: visible 
-	opacity: 1 
-	transition: all 0.3s ease-in-out
-
 .about_me_descr 
 	margin-bottom: 10px
 	font-size: 1.05rem
@@ -241,12 +236,13 @@ nav
 @media (max-width: 767px) 
 	nav
 		background-color: rgba(242, 242, 242, 0)
-		backdrop-filter: none
+		backdrop-filter: none !important
 	.card_container 
 		margin: 5px auto 30px auto
 	.about_me 
 		padding: 5px 15px
 		transition: all 0.4s ease, height 0.3s ease, width 0.3s ease
+		box-shadow: none
 	.about_me .container
 		display: block
 		height: 100%
@@ -264,10 +260,6 @@ nav
 		position: relative
 		z-index: -1
 		pointer-events: auto
-	.about_me a
-		color: #000
-		font-weight: normal
-		text-decoration: none
 	.about_me .mobile_available 
 		display: block
 	.inst_wrapper 

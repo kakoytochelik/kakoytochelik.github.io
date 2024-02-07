@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My portfolio page">
+    <meta name="description" content="Alex's portfolio page">
     <title>Alex's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="prefetch" href="https://kakoytochelik.github.io/WPCoursesLanding/"/>
-    <link rel="prefetch" href="https://kakoytochelik.github.io/UberPartners/"/>
-    <link rel="prefetch" href="https://kakoytochelik.github.io/InterTekh/"/>
+    
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="preload" href="icons/close.svg" as="image">
     <link rel="preload" href="img/ps.webp" as="image">
     <link rel="preload" href="img/tgpano.webp" as="image">
     <link rel="preload" href="img/tgpass.webp" as="image">
@@ -18,12 +25,16 @@
     <link rel="preload" href="img/up.webp" as="image">
     <link rel="preload" href="img/ikh.webp" as="image">
     <link rel="preload" href="img/wp.webp" as="image">
+
+    <link rel="preload" href="img/carousel/1.webp" as="image">
+    <link rel="preload" href="img/carousel/2.webp" as="image">
+
+    <link rel="preload" href="js/popup.js" as="script">
+
     <link rel="icon" href="icons/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/animate_card.js"></script>
+    <script src="js/popup.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -43,15 +54,15 @@
     <section class="info">
         <div class="about_me">
             <div class="popup_header header_content">
-                <div class="popup_title ">About me</div>
-                <div class="popup_close "></div>
+                <div class="popup_title">About me</div>
+                <div class="popup_close"></div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7">
                         <span class="about_me_descr ">Welcome! My name is Alexey Eremeev, thank you for your interest in my portfolio!</span>
                         <span class="about_me_descr ">This site provides quick links to my projects. This site is also part of my portfolio and was created with HTML (Bootstrap Grid), CSS (Sass), JavaScript (jQuery).</span>
-                        <span class="about_me_descr  mobile_available">All cards are clickable. If you are viewing this site from a mobile device: first tap - information, second tap - go to the link, scroll or swipe - hide the information.</span>
+                        <span class="about_me_descr  mobile_available">All cards are tapable: first tap - information, second tap - go to the link, scroll or swipe - hide the information.</span>
                         <span class="about_me_descr ">In 2020, I graduated with a bachelor's degree in Mechatronics and Robotics from the Russian Technical University (RTU MIREA). On the basis of my thesis about applying Neural Networks with image processing, I created a Telegram-bot for processing (deblurring using Neural network) and creating panoramic images. Unfortunately, this bot is currently offline.</span>
                         <span class="about_me_descr ">From 2019 to 2020 I worked as manual QA engineer in VK holding company's service testing program called "/testpool".</span>
                         <span class="about_me_descr ">Since 2021 I have been working as a QA and Automatization engineer and since 2023 as a QA TeamLead at 1C International. We use an internal framework based on Cucumber as well as SikuliX and Cypress to test desktop, mobile, and web version of an ERP product called 1C:Drive.</span>
@@ -63,7 +74,7 @@
                         <span class="inst_title ">I also have an Instagram profile:</span>
                         <a href="https://www.instagram.com/alx.jrm/" target="_blank" class="slideshow ">
                             <div class="slideshow_hidden">
-                                <img src="img/carousel/1.webp" alt="Instagram carousel">
+                                <img src="img/carousel/1.webp" loading="eager" alt="Instagram carousel">
                             </div>
                         </a>
                     </div>
@@ -213,7 +224,4 @@
         </div>
     </section>
 </body>
-<script src="js/animate_card.js"></script>
-<script src="js/popup.js"></script>
-<script src="js/slideshow.js"></script>
 </html>
