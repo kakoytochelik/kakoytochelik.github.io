@@ -1,0 +1,2047 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Rubik&subset=cyrillic');
+
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, SUB, SUP, TT, VAR, U, CENTER, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD, ARTICLE, ASIDE, CANVAS, DETAILS, EMBED, FIGURE, FIGCAPTION, FOOTER, HEADER, HGROUP, MENU, NAV, OUTPUT, RUBY, SECTION, SUMMARY, TIME, MARK, AUDIO, VIDEO {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Rubik', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 1290px;
+  font: 1.3em 'Rubik', Arial, sans-serif;
+  position: relative;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+}
+
+.body_hide {
+  opacity: 0;
+  transition: 0.7s opacity ease-in-out;
+}
+
+.body_visible {
+  opacity: 1;
+}
+
+body, html {
+  height: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+iframe {
+  border-radius: 10%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+}
+
+#send, .dropmenu a, .contactus a {
+  transition: 0.2s;
+}
+
+/*
+
+
+
+
+*/
+/*---------------шапка---------------*/
+.header {
+  height: 180px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.wrapper {
+  width: 960px;
+  margin: auto;
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  margin-left: 300px;
+  width: 320px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  background: url('images/logo.png') no-repeat center top;
+  background-size: 100%;
+  background-position: 50%;
+  line-height: 1.3;
+  z-index: 50;
+  text-decoration: none;
+}
+
+.header-line {
+  height: 120px;
+  background: #fff;
+  /*line-height: 47px;*/
+  margin-bottom: 0;
+}
+
+p.adress_header {
+  display: block;
+  position: absolute;
+  color: #0093b4;
+  margin-top: 45px;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p.adress_header2 {
+  display: block;
+  padding-left: 0;
+  position: absolute;
+  font-size: 13px;
+  color: #0090b0;
+  margin-top: 63px;
+  margin-left: 0;
+}
+
+.adress_email {
+  position: absolute;
+  display: block;
+  width: 120px;
+  top: 53px;
+  right: 0;
+  color: #2887aa;
+  padding-left: 0;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-phone1 {
+  font-size: 16px;
+  color: #0093b4;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  left: 654px;
+  top: 45px;
+  float: right;
+}
+
+.header-phone2 {
+  display: block;
+  position: absolute;
+  left: 654px;
+  top: 64px;
+  float: right;
+  font-size: 16px;
+  color: #0093b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-phone3 {
+  display: block;
+  position: absolute;
+  left: 654px;
+  top: 69px;
+  float: right;
+  font-size: 16px;
+  color: #07619d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*---------------шапка---------------*/
+/*
+
+
+
+
+*/
+.btnup {
+  display: none;
+}
+
+.buttons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  left: 10%;
+  bottom: 10%;
+  z-index: 100;
+}
+
+.imgup:hover, .btnhome:hover {
+  opacity: 1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s all;
+}
+
+.imgup:not(:hover), .btnhome:not(:hover) {
+  opacity: 0.2;
+  transition: 0.3s;
+  -webkit-transition: 0.3s all;
+}
+
+.buttons img {
+  width: 39px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px rgba(0, 28, 75, 0.27);
+}
+
+.btndwn img {
+  width: 49px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px rgba(0, 28, 75, 0.27);
+}
+
+/*
+
+
+
+
+*/
+/*---------------меню---------------*/
+.dropmenu {
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10000000;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.dropmenubg {
+  width: 100%;
+  height: 60px;
+  z-index: 10000000;
+  padding-bottom: 10px;
+}
+
+.menu {
+  padding-top: 10px;
+  
+  /* padding-left: 8px;  */
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* .menu li:first-child {
+  padding: 0px;
+} */
+
+.menu .dropdown-body li {
+  /* display: table-cell; */
+  margin-top: 20px;
+}
+
+.menu a {
+  border-radius: 20px;
+  display: block;
+  height: 50px;
+  width: 171px;
+  line-height: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 28px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  width: 226px;
+}
+
+.menu .fakelink {
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 102px;
+}
+
+/*---------------меню---------------*/
+/*
+
+
+
+
+*/
+/*---------------выпадающие панели---------------*/
+.dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: -20px;
+  top: 100%;
+  transform: translateY(-2em);
+  z-index: -100;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dropdown-content a:hover {
+  background-color: #00a3c8;
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  z-index: 0;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+  display: block;
+}
+
+.dropdown:hover .fakelink {
+  background-color: #00a3c8;
+}
+
+.drop-wrapper {
+  width: 226px;
+  height: 15px;
+  z-index: 0;
+}
+
+.dropdown-body {
+  background-color: rgba(254, 255, 255, 1);
+  width: 1208px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: -100;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-body li {
+  color: rgb(255, 255, 255);
+  position: relative;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dropdown-body>* {
+  flex-grow: 1;
+}
+
+.droptext {
+  font: 1.3em 'Rubik', Arial, sans-serif;
+  line-height: 1.3em;
+  padding: 0 30px;
+}
+
+.firstdrop, .seconddrop {
+  width: calc(100%/3*2);
+  display: flex;
+  align-items: center;
+}
+
+/*---------------выпадающие панели---------------*/
+/*
+
+
+
+
+*/
+/*---------------1 панель---------------*/
+.firstdrop img {
+  height: 250px;
+}
+
+.dropdown-links1 a {
+  /* height: 40px; */
+  width: 289px;
+}
+
+a.multi {
+  line-height: 20px;
+  /* height: 40px; */
+}
+
+/*---------------1 панель---------------*/
+/*
+
+
+
+
+*/
+/*---------------2 панель---------------*/
+/*.dropdown-links2 {
+  columns: 2;
+}*/
+.dropdown-links2 a {
+  width: 269px;
+}
+
+.seconddrop img {
+  height: 170px;
+  margin: 45px 30px;
+}
+
+.seconddrop p {
+  margin-top: -20px;
+}
+
+.seconddrop em {
+  font: 1em 'Rubik', Arial, sans-serif;
+}
+
+/*---------------2 панель---------------*/
+/*
+
+
+
+
+*/
+/*------------------------------*/
+.wrapper-down {
+  width: 960px;
+  height: 10px;
+  margin: auto;
+  position: relative;
+}
+
+/*------------------------------*/
+/*
+
+
+
+
+*/
+/*---------------кружочки---------------*/
+.parallax {
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.25) inset;
+  background-image: url("images/parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  box-shadow: 0 0 0 500px rgba(207, 207, 207, 0.7) inset;
+  background-image: url("images/parallaxblur.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blockhead {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 2px 15px black;
+  font: 45px 'Rubik', Arial, sans-serif;
+}
+
+.circles {
+  margin: 0 auto;
+  display: flex;
+  letter-spacing: .5px;
+  width: 960px;
+}
+
+.circles img {
+  height: 120px;
+  padding: 0 50px;
+}
+
+.circlefirst, .circlesec, .circlethird {
+  width: calc(100%/3);
+  padding: 50px 50px;
+}
+
+.circlehead {
+  padding-top: 10px;
+  height: 112px;
+  align-items: center;
+  display: flex;
+}
+
+.infa1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 15px black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  padding-top: 20px;
+}
+
+.infa12 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 15px black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+.infa13 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 15px black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  padding-top: 20px;
+}
+
+.infa2 {
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 10px black, 0 0 1em black;
+  font-family: 'Rubik', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+/*---------------кружочки---------------*/
+/*
+
+
+
+
+*/
+/*---------------Текст+картинка---------------*/
+.parblock {
+  background-color: white;
+  margin-bottom: 0;
+  position: relative;
+  box-shadow: 0px 0px 15px black;
+  z-index: 0;
+}
+
+.parblock1 {
+  background-color: white;
+  margin-bottom: 0;
+  position: relative;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.textblock {
+  padding: 80px 30px;
+  width: calc(100%/2);
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+}
+
+.imgblock {
+  padding: 40px 40px;
+  padding-left: 100px;
+}
+
+.imgblock1 {
+  padding: 40px 40px;
+  padding-right: 100px;
+}
+
+.infoblock img {
+  height: 500px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+}
+
+/*---------------Текст+картинка---------------*/
+/*
+
+
+
+
+*/
+/*---------------блок3---------------*/
+.short {
+  margin: -100px 0;
+  padding: 100px;
+}
+
+#about, #forma {
+  margin: -50px 0;
+  padding: 50px;
+}
+
+.parallax1 {
+  background-image: url("images/img-parallax.jpg");
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.45) inset;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.blockhead1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 2px 15px black;
+  font: 45px 'Rubik', Arial, sans-serif;
+}
+
+.descriptblock {
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 0px 2px 15px black;
+  font: 1.4em 'Rubik', Arial, sans-serif;
+}
+
+.countries {
+  margin: 0 auto;
+  display: flex;
+  letter-spacing: .5px;
+  width: 960px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.colhead {
+  width: auto;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 5px 5px 10px black;
+  font: 20px 'Rubik', Arial, sans-serif;
+  position: relative;
+  margin: 0 auto;
+}
+
+.colfirst, .colsec, .colthird {
+  width: calc(100%/3);
+  padding-top: 40px;
+}
+
+.colfirst ul, .colsec ul, .colthird ul {
+  padding: 30px 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.colfirst li, .colsec li, .colthird li {
+  display: block;
+  height: auto;
+  padding: 0 30px;
+  font: 15px 'Rubik', Arial, sans-serif;
+  color: white;
+  margin: 10px 85px;
+  text-shadow: 0px 2px 15px black;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+*/
+.parallax2 {
+  background-image: url("images/img-parallax.jpg");
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.45) inset;
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.countries1 {
+  margin: 0 auto;
+  display: flex;
+  letter-spacing: .5px;
+  width: 960px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.colhead1 {
+  width: auto;
+  text-align: center;
+  color: #fff;
+  text-shadow: 5px 5px 10px black;
+  font: 20px 'Rubik', Arial, sans-serif;
+  position: relative;
+  margin: 0 auto;
+}
+
+.colfirst1, .colsec1 {
+  width: calc(100%/2);
+  padding: 40px 0;
+}
+
+.countries1 ul {
+  padding: 30px 20px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.countries1 li {
+  display: block;
+  height: auto;
+  width: 120px;
+  padding-left: 30px;
+  font: 15px 'Rubik', Arial, sans-serif;
+  color: white;
+  margin: 10px 160px;
+  text-shadow: 0px 2px 15px black;
+}
+
+.GE {
+  background: url(flags/ge.png) 0px 2px no-repeat;
+}
+
+.FR {
+  background: url(flags/fr.jpg) 0px 2px no-repeat;
+}
+
+.IT {
+  background: url(flags/it.png) 0px 2px no-repeat;
+}
+
+.ES {
+  background: url(flags/es.jpg) 0px 2px no-repeat;
+}
+
+.PL {
+  background: url(flags/pl.jpg) 0px 2px no-repeat;
+}
+
+.CZ {
+  background: url(flags/cz.jpg) 0px 2px no-repeat;
+}
+
+.FN {
+  background: url(flags/fn.jpg) 0px 2px no-repeat;
+}
+
+.UKR {
+  background: url(flags/ukr.png) 0px 2px no-repeat;
+}
+
+.RU {
+  background: url(flags/ru.png) 0px 2px no-repeat;
+}
+
+.KZ {
+  background: url(flags/kz.png) 0px 2px no-repeat;
+}
+
+.UZ {
+  background: url(flags/uz.png) 0px 2px no-repeat;
+}
+
+.AR {
+  background: url(flags/ar.png) 0px 2px no-repeat;
+}
+
+.AZ {
+  background: url(flags/az.png) 0px 2px no-repeat;
+}
+
+.GR {
+  background: url(flags/gr.png) 0px 2px no-repeat;
+}
+
+.BL {
+  background: url(flags/bl.png) 0px 2px no-repeat;
+}
+
+.TR {
+  background: url(flags/tr.jpg) 0px 2px no-repeat;
+}
+
+.EG {
+  background: url(flags/eg.png) 0px 2px no-repeat;
+}
+
+.IS {
+  background: url(flags/is.png) 0px 2px no-repeat;
+}
+
+.CY {
+  background: url(flags/cy.jpg) 0px 2px no-repeat;
+}
+
+.AE {
+  background: url(flags/ae.png) 0px 2px no-repeat;
+}
+
+.IR {
+  background: url(flags/ir.png) 0px 2px no-repeat;
+}
+
+.IQ {
+  background: url(flags/iq.png) 0px 2px no-repeat;
+}
+
+.JP {
+  background: url(flags/jp.png) 0px 2px no-repeat;
+}
+
+.CH {
+  background: url(flags/ch.png) 0px 2px no-repeat;
+}
+
+.TH {
+  background: url(flags/th.png) 0px 2px no-repeat;
+}
+
+.VM {
+  background: url(flags/vm.jpg) 0px 2px no-repeat;
+}
+
+.SG {
+  background: url(flags/sg.jpg) 0px 2px no-repeat;
+}
+
+.KR {
+  background: url(flags/kr.jpg) 0px 2px no-repeat;
+}
+
+.IN {
+  background: url(flags/in.png) 0px 2px no-repeat;
+}
+
+.USA {
+  background: url(flags/usa.png) 0px 2px no-repeat;
+}
+
+.MX {
+  background: url(flags/mx.png) 0px 2px no-repeat;
+}
+
+.CA {
+  background: url(flags/cn.jpg) 0px 2px no-repeat;
+}
+
+/*---------------блок3---------------*/
+/*
+
+box-shadow: 0 0 0 3000px rgba(255, 255, 255, 0.7) inset;
+
+
+*/
+/*---------------О нас---------------*/
+.parallax4 {
+  background-image: url("images/img-parallaxblur.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brightness {
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+.blockhead2 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 45px 'Rubik', Arial, sans-serif;
+  color: rgb(57, 57, 57);
+  padding-top: 50px;
+}
+
+.parblock2 {
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.53) inset;
+  background-image: url("images/aboutbg.jpg");
+  background-color: rgba(122, 93, 74, 0.89);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 0;
+  color: rgb(255, 255, 255);
+}
+
+.textblock1 {
+  padding: 0 30px;
+  padding-top: 30px;
+  /*width: calc(100%/2);*/
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+  color: rgb(57, 57, 57);
+  /*text-shadow: 1px 1px 10px black, 0 0 1em black;*/
+}
+
+.textblock ul, .textblock1 ul {
+  list-style-type: circle;
+}
+
+.textblock li {
+  padding: 15px;
+}
+
+.textblock1 li {
+  padding: 10px;
+}
+
+/*---------------О нас---------------*/
+/*
+
+
+
+
+*/
+/*---------------Форма обратной связи---------------*/
+.parallax5 {
+  background-image: url("images/img-parallaxblur.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parentcenter {
+  width: 717px;
+  margin: 0 auto;
+}
+
+#inline {
+  padding: 10px 20px;
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 718px;
+  color: rgb(57, 57, 57);
+}
+
+#inline h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font: 32px 'Rubik', Arial, sans-serif;
+  text-shadow: 0px 1px 3px rgba(48, 48, 48, 0.3);
+}
+
+.userinput {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+.usercontacts, .userinfo1 {
+  padding-bottom: 17px;
+}
+
+.userinfo div, .userinfo1 div, .usercontacts div {
+  display: inline-block;
+}
+
+#phone, #shipfrom, #itemmass {
+  margin: 10px 15px;
+}
+
+.txt {
+  display: inline-block;
+  background-color: #c9cdda;
+  /*efefef*/
+  border-radius: 30px;
+  color: #676767;
+  text-decoration: none;
+  width: 205px;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  padding: 5px 9px;
+  font-size: 17px !important;
+  line-height: 1.4em;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.txtarea {
+  display: inline-block;
+  color: #676767;
+  border-radius: 15px;
+  background-color: #c9cdda;
+  /*efefef*/
+  width: 700px;
+  margin-bottom: 10px;
+  border: none;
+  padding: 10px 20px;
+  line-height: 1.4em;
+  height: 80px;
+  font: 17px 'Rubik', Arial, sans-serif;
+  resize: none;
+  margin: 10px auto;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.txt:focus, .txtarea:focus {
+  color: #444;
+}
+
+input.error, textarea.error {
+  background: #f0bebe;
+  color: #a35959;
+}
+
+input.error:focus, textarea.error:focus {
+  color: #a35959;
+}
+
+#send {
+  color: #FFFFFF;
+  display: block;
+  cursor: pointer;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 20px;
+  width: 210px;
+  height: 40px;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, .7);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 28px;
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);*/
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+#send:hover {
+  background-color: #00a3c8;
+}
+
+/*---------------Форма обратной связи---------------*/
+/*
+
+
+
+
+*/
+/*---------------контакты---------------*/
+.contactsblock {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.contactsblock .imgblock {}
+
+.map {
+  position: relative;
+  width: 465px;
+  height: 490px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+
+.contactsblock a {
+  color: rgb(57, 57, 57);
+  padding-left: 0;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blockhead3 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 35px 'Rubik', Arial, sans-serif;
+  color: rgb(57, 57, 57);
+}
+
+.contacttext {
+  font: 24px 'Rubik', Arial, sans-serif;
+  line-height: 2em;
+  padding-left: 70px;
+  color: rgb(57, 57, 57);
+}
+
+/*---------------контакты---------------*/
+/*
+
+. {
+  border-radius: 20px;
+  display: block;
+  height: 40px;
+  width: 170px;
+  line-height: 40px;
+  color: #fff;
+  background: rgba(0, 0, 0, .7);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 28px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+*/
+/*---------------футер---------------*/
+.footblock {
+  height: 180px;
+  background-color: rgb(55, 55, 55);
+  box-shadow: 0 0px 15px black inset;
+  margin-bottom: 0;
+  position: relative;
+  align-items: center;
+  font: 1.2em 'Rubik', Arial, sans-serif;
+  display: flex;
+}
+
+.copyblock {
+  width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+
+.copytext {
+  color: rgb(237, 237, 237);
+  line-height: 1.4em;
+  width: calc(100%/3*1.2);
+}
+
+.copytext1 {
+  color: rgb(237, 237, 237);
+  font: 12px 'Rubik', Arial, sans-serif;
+  line-height: 1.4em;
+  width: calc(100%/4);
+  text-align: center;
+}
+
+.copytext1 a {
+  color: rgb(237, 237, 237);
+  text-decoration: none;
+  text-align: center;
+}
+
+.copytext2 {
+  padding-left: 90px;
+  padding-top: 35px;
+  color: rgb(237, 237, 237);
+  line-height: 1.4em;
+}
+
+.social {
+  float: right;
+  margin: 0;
+  list-style: none;
+  margin-top: -30px;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.social p {
+  font: 14px 'Rubik', Arial, sans-serif;
+  padding-bottom: 7px;
+}
+
+.social li {
+  float: left;
+  display: list-item;
+}
+
+#firstsoc {
+  margin-left: 50px;
+}
+
+.soc-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 7px;
+}
+
+/*---------------футер---------------*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*---------------виды грузов---------------*/
+.cargo {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/general.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg1 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-general.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg2 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-cargobg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg3 {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/cargobg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg4 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-icebg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg5 {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/icebg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg6 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-groupbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg7 {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/groupbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg8 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-dangerousbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg9 {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/dangerousbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg10 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-cars.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg11 {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-image: url("images/cars.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg12 {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blur-cars1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-general, .parallax-general1 {
+  padding-top: 50px;
+}
+
+.parallax-general1 {
+  padding-bottom: 120px;
+}
+
+.parallax6 {
+  box-shadow: 0 0 0 500px rgba(204, 210, 238, 0.5) inset;
+  background-image: url("images/cargoparallaxblur.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-cargo1, .additional {
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+  color: rgb(255, 255, 255);
+  margin: 0 90px;
+}
+
+.text-cargo1 {
+  padding-top: 20px;
+}
+
+.additional {
+  padding: 10px 100px;
+  padding-bottom: 50px;
+}
+
+.cargoinfo {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 15px black;
+}
+
+.text-cargo2 {
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+  color: rgb(57, 57, 57);
+  padding: 0px 100px;
+}
+
+.head-cargo1 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 45px 'Rubik', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+}
+
+.semihead {
+  text-align: center;
+  font: 25px 'Rubik', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+}
+
+.blur-general .semihead {
+  color: rgb(57, 57, 57);
+}
+
+.text-cargo1 ul {
+  list-style-type: circle;
+  padding: 0 100px;
+  font-size: 15px;
+}
+
+.parallax-general1 ol {
+  padding: 0 100px;
+}
+
+.parallax-general1 ul {
+  padding: 0 25px;
+  font-size: 18px;
+}
+
+.text-cargo2 ul {
+  list-style-type: circle;
+  padding: 0 25px;
+  padding-bottom: 30px;
+}
+
+.text-cargo1 li {
+  padding: 5px;
+}
+
+.text-cargo2 li {
+  padding: 10px;
+}
+
+/*---------------виды грузов---------------*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*---------------жд---------------*/
+.parallax7 .textblock1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+  padding-bottom: 40px;
+}
+
+.rail {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/rail.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg1rail {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blurrail1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax8 {
+  box-shadow: 0 0 0 500px rgba(255, 255, 255, 0.5) inset;
+  background-image: url("images/blurrail.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(57, 57, 57);
+}
+
+.parallax8 .infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.parallax8 .textblock {
+  margin-left: 90px;
+  padding: 50px 0px;
+  width: calc(100%/2);
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+}
+
+.parallax8 .textblock li {
+  padding: 5px;
+}
+
+.semihead1 {
+  text-align: center;
+  font: 25px 'Rubik', Arial, sans-serif;
+  padding-bottom: 30px;
+}
+
+/*---------------жд---------------*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*---------------морские---------------*/
+.parallax10 .textblock1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+  padding-bottom: 40px;
+}
+
+.sea {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/sea.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg1sea {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/blursea1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax11 {
+  box-shadow: 0 0 0 500px rgba(255, 255, 255, 0.5) inset;
+  background-image: url("images/blursea.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax10 .infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.parallax10 .textblock {
+  margin-left: 90px;
+  padding: 50px 0px;
+  width: calc(100%/2);
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax10 .textblock li {
+  padding: 5px;
+}
+
+.parallax10 .semihead1 {
+  text-align: center;
+  font: 25px 'Rubik', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax11 .textblock1 {
+  font: 1.8em 'Rubik', sans-serif;
+  padding: 70px 30px;
+}
+
+/*---------------морские---------------*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*---------------авиа---------------*/
+.parallax12 .textblock1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+  padding-bottom: 40px;
+}
+
+.avia {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/avia.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg1avia {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/aviablur1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax13 {
+  box-shadow: 0 0 0 500px rgba(255, 255, 255, 0.5) inset;
+  background-image: url("images/aviablur.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax12 .infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.parallax12 .textblock {
+  margin-left: 90px;
+  padding: 50px 0px;
+  width: calc(100%/2);
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax12 .textblock li {
+  padding: 5px;
+}
+
+.parallax12 .semihead1 {
+  text-align: center;
+  font: 25px 'Rubik', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax13 .textblock1 {
+  font: 1.8em 'Rubik', sans-serif;
+  padding: 70px 30px;
+}
+
+.parallax13 .txt, .parallax13 .txtarea {
+  background-color: #dbdbdb;
+}
+
+/*---------------авиа---------------*/
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/*---------------авто---------------*/
+.parallax14 .textblock1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+  padding-bottom: 40px;
+}
+
+.autolistlast {
+  padding-left: 140px;
+}
+
+.auto {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/auto.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg1auto {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/autoblur1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax15 {
+  box-shadow: 0 0 0 500px rgba(255, 255, 255, 0.5) inset;
+  background-image: url("images/autoblur.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(57, 57, 57);
+  text-align: center;
+}
+
+.parallax15 .semihead1 {
+  padding-top: 50px;
+  margin: 0 40px;
+}
+
+.parallax15 .infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.parallax15 .textblock1 {
+  font: 1.8em 'Rubik', sans-serif;
+  padding: 30px 30px;
+}
+
+.parallax15 .textblock li {
+  padding: 5px;
+}
+
+.parallax15 .txt, .parallax15 .txtarea {
+  background-color: #e2d4d4;
+}
+
+.parallax14 ul {
+  margin: 0 100px;
+}
+
+.multi {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/rail.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Basic background image styling. */
+.background-image {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 2000px;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+  background-image: url('images/rail.jpg');
+  z-index: -3;
+  opacity: 0;
+}
+
+.second-image {
+  background-image: url('images/avia.jpg');
+  z-index: -2;
+  opacity: 0;
+}
+
+.third-image {
+  background-image: url('images/auto.jpg');
+  z-index: -1;
+  opacity: 0;
+}
+
+.four-image {
+  background-image: url('images/sea.jpg');
+  z-index: -1;
+  opacity: 0;
+}
+
+.first-image.show {
+  opacity: 1;
+}
+
+.second-image.show {
+  opacity: 1;
+}
+
+.third-image.show {
+  opacity: 1;
+}
+
+.four-image.show {
+  opacity: 1;
+}
+
+.autolistlast1 {
+  padding-left: 200px;
+}
+
+.parallax16 {
+  box-shadow: 0 0 0 500px rgba(255, 255, 255, 0.6) inset;
+  background-image: url("images/blurrail.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(57, 57, 57);
+}
+
+.parallax16 .infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.parallax16 .textblock {
+  margin-left: 90px;
+  padding: 50px 0px;
+  width: calc(100%/2);
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+}
+
+.parallax16 .textblock li {
+  padding: 5px;
+}
+
+.parallax17 .textblock1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+  padding-bottom: 40px;
+}
+
+.exp {
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply;
+  background-image: url("images/export.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.changebg1exp {
+  background-color: rgba(0, 0, 0, 0.32);
+  background-blend-mode: multiply;
+  background-image: url("images/exportblur1.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax18 {
+  box-shadow: 0 0 0 500px rgba(255, 255, 255, 0.5) inset;
+  background-image: url("images/exportblur.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax17 .infoblock {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.parallax17 .textblock {
+  margin-left: 90px;
+  padding: 50px 0px;
+  width: calc(100%/2);
+  font: 1.4em 'Rubik', sans-serif;
+  line-height: 1.4em;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax17 .textblock li {
+  padding: 5px;
+}
+
+.parallax17 .semihead1 {
+  text-align: center;
+  font: 25px 'Rubik', Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  padding-bottom: 30px;
+  text-shadow: 2px 2px 15px black;
+}
+
+.parallax18 .textblock1 {
+  font: 1.8em 'Rubik', sans-serif;
+  padding: 70px 30px;
+}
+
+.parallax18 .txt, .parallax18 .txtarea {
+  background-color: #d0d7df;
+}
+
+#contactus {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.contactus {
+  text-align: center;
+}
+
+.contactus a {
+  border-radius: 20px;
+  display: inline-block;
+  height: 40px;
+  width: 171px;
+  line-height: 40px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  text-align: center;
+  padding: 0 28px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+
+.contactus a:hover {
+  background-color: #00a3c8;
+}

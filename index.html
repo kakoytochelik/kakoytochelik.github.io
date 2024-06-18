@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex's portfolio page">
+    <title>Alex's Portfolio</title>
+    
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/SFProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="preload" href="icons/close.svg" as="image">
+    <link rel="preload" href="img/ps.webp" as="image">
+    <link rel="preload" href="img/tgpano.webp" as="image">
+    <link rel="preload" href="img/tgpass.webp" as="image">
+    <link rel="preload" href="img/ipd.webp" as="image">
+    <link rel="preload" href="img/tetris.webp" as="image">
+    <link rel="preload" href="img/up.webp" as="image">
+    <link rel="preload" href="img/ikh.webp" as="image">
+    <link rel="preload" href="img/wp.webp" as="image">
+
+    <link rel="preload" href="img/carousel/1.webp" as="image">
+    <link rel="preload" href="img/carousel/2.webp" as="image">
+
+    <link rel="preload" href="js/popup.js" as="script">
+
+    <link rel="icon" href="icons/favicon/favicon.ico" type="image/x-icon">
+    <script src="js/animate_card.js"></script>
+    <script src="js/popup.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav_blur">
+            <div class="container">
+                <div class="header_content">
+                    <div class="title">Alex's projects</div>
+                    <div class="links">
+                        <a href="https://github.com/kakoytochelik/" aria-label="Github" target="_blank" class="github_link"></a>
+                        <div class="profile"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="info">
+        <div class="about_me">
+            <div class="popup_header header_content">
+                <div class="popup_title">About me</div>
+                <div class="popup_close"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <span class="about_me_descr ">Welcome! My name is Alexey Eremeev, thank you for your interest in my portfolio!</span>
+                        <span class="about_me_descr ">This site provides quick links to my projects. This site is also part of my portfolio and was created with HTML (Bootstrap Grid), CSS (Sass), JavaScript (jQuery).</span>
+                        <span class="about_me_descr  mobile_available">All cards are tapable: first tap - information, second tap - go to the link, scroll or swipe - hide the information.</span>
+                        <span class="about_me_descr ">In 2020, I graduated with a bachelor's degree in Mechatronics and Robotics from the Russian Technical University (RTU MIREA). On the basis of my thesis about applying Neural Networks with image processing, I created a Telegram-bot for processing (deblurring using Neural network) and creating panoramic images. Unfortunately, this bot is currently offline.</span>
+                        <span class="about_me_descr ">From 2019 to 2020 I worked as manual QA engineer in VK holding company's service testing program called "/testpool".</span>
+                        <span class="about_me_descr ">Since 2021 I have been working as a QA and Automatization engineer and since 2023 as a QA TeamLead at 1C International. We use an internal framework based on Cucumber as well as SikuliX, Appium and Cypress to test desktop, mobile, and web version of an ERP product called 1C:Drive.</span>
+                        <span class="about_me_descr ">I have knowledge in HTML, CSS, preprocessors (Sass, Scss, Less), JavaScript, Bootstrap library, can apply Bootstrap-Grid to create adaptive websites. Have knowledge of Swift and Kotlin basics. I can create Python scripts and GUI software (using PyQT, for example) in addition to Robot Operating System and CoppeliaSim. Also have some experience in Unity and Unreal Engine.</span>
+                        <span class="about_me_descr ">But I believe that the most important skill is to be able to search for information and apply it to the task at hand. Why reinvent the wheel?</span>    
+                    </div>
+                    <div class="col-12 col-md-5 inst_wrapper">
+                        <span class="inst_title ">I also have an Instagram profile:</span>
+                        <a href="https://www.instagram.com/alx.jrm/" target="_blank" class="slideshow ">
+                            <div class="slideshow_hidden">
+                                <img src="img/carousel/1.webp" loading="eager" alt="Instagram carousel">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://github.com/kakoytochelik/VanessaShortcuts" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/shortcuts_logo.webp" alt="Vanessa Shortcuts logo">
+                            </div>
+                            <div class="card_descr">
+                                A plugin for Visual Studio Code that allows to use shortcuts for Vanessa Automation.<br>
+                                Has a dedicated steps library, so it can be used in different cases with different languages.<br>
+                                Significantly speeds up the work of a QA department employee.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/shortcuts.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://github.com/kakoytochelik/PhaseSwitcher" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/ps_logo.webp" alt="PhaseSwtitcher logo">
+                            </div>
+                            <div class="card_descr">
+                                Internal tool for management of autotest phases in 1cDrive build pipeline.<br>
+                                Allows you to enable and disable different tests, switch between different regional versions of the product.<br>
+                                Significantly speeds up the work of a QA department employee.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/ps.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://t.me/deblurpano_bot" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/deblur_logo.webp" alt="DeblurPano logo">
+                            </div>
+                            <div class="card_descr">
+                                Telegram-bot designed to remove blurring of images for the purpose of their further stitching into a panorama.<br>
+                                Can create panoramas from separate images, as well as from video.<br>
+                                Based on the graduation work, only without the "hardware" part.<br>
+                                Currently offline.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/tgpano.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://t.me/pypassgen_bot" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/passgen_logo.webp" alt="PassGen logo">
+                            </div>
+                            <div class="card_descr">
+                                Telegram password generator.<br>
+                                Two modes of generation.<br>
+                                Bot is based on a console utility from my repository. Written in Python using the python-telegram-bot library.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/tgpass.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://drive.google.com/file/d/1mTZ12lh-4Pg3UduVPhzQCuLjTv--RWsc/view?usp=share_link" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/tetris_logo.webp" alt="Tetris logo">
+                            </div>
+                            <div class="card_descr">
+                                Tetris for Android in Retrowave style.<br>
+                                Created on the Unity engine with the use of some Assets. Created in my student years.<br>
+                                Unfortunately, the source code has not been saved.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/tetris.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://passivrus.ru/" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/ipd_logo.webp" alt="PHI logo">
+                            </div>
+                            <div class="card_descr">
+                                New Passive House Institute website.<br>
+                                Created in WordPress.<br>
+                                Used WPBakery, PageBuilder, WooCommerce, Autoptimize.<br>
+                                Transferred and optimized content from the old site.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/ipd.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://kakoytochelik.github.io/sites/UberPartners/" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/up_logo.webp" alt="UberPartners logo">
+                            </div>
+                            <div class="card_descr">
+                                Adaptive landing page, made as part of a training course.<br>
+                                Written in HTML using Bootstrap-Grid, CSS with Sass preprocessor + small JS script.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/up.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://kakoytochelik.github.io/sites/InterTekh/" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/ikh_logo.webp" alt="InterTech logo">
+                            </div>
+                            <div class="card_descr">
+                                The old website of the logistics company "InterTech", created in pure HTML and CSS + JS elements using the library jQuery.<br>
+                                No adaptive design.<br>
+                                It was created during my student years.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/ikh.webp');"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card_container">
+                        <a href="https://kakoytochelik.github.io/sites/WPCoursesLanding/" target="_blank" class="card_content">
+                            <div class="card_title">
+                                <img src="icons/wp_logo.webp" alt="WordPress logo">
+                            </div>
+                            <div class="card_descr">
+                                A simple HTML and CSS based landing page.<br>
+                                Made as part of a training course.
+                            </div>
+                        </a>
+                        <div class="card_background" style="background: url('./img/wp.webp');"></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+</body>
+</html>

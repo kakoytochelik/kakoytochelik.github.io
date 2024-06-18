@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная - InterTekh Logistics</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="images/logo.png" as="image" />
+  <link rel="preload" href="images/parallax.jpg" as="image" />
+  <link rel="preload" href="images/parallaxblur.jpg" as="image" />
+  <link rel="preload" href="images/img-parallax.jpg" as="image" />
+  <link rel="preload" href="images/img-parallaxblur.jpg" as="image" />
+  <link rel="preload" href="images/export.jpg" as="image" />
+  <link rel="preload" href="images/exportblur.jpg" as="image" />
+  <link rel="preload" href="images/exportblur1.jpg" as="image" />
+  <link rel="preload" href="images/rail.jpg" as="image" />
+  <link rel="preload" href="images/blurrail.jpg" as="image" />
+  <link rel="preload" href="images/blurrail1.jpg" as="image" />
+  <link rel="preload" href="images/sea.jpg" as="image" />
+  <link rel="preload" href="images/blursea.jpg" as="image" />
+  <link rel="preload" href="images/blursea1.jpg" as="image" />
+  <link rel="preload" href="images/avia.jpg" as="image" />
+  <link rel="preload" href="images/aviablur.jpg" as="image" />
+  <link rel="preload" href="images/aviablur1.jpg" as="image" />
+  <link rel="preload" href="images/auto.jpg" as="image" />
+  <link rel="preload" href="images/autoblur.jpg" as="image" />
+  <link rel="preload" href="images/autoblur1.jpg" as="image" />
+  <link rel="preload" href="images/general.jpg" as="image" />
+  <link rel="preload" href="images/blur-general.jpg" as="image" />
+  <link rel="preload" href="images/blur-cargobg.jpg" as="image" />
+  <link rel="preload" href="images/cargobg.jpg" as="image" />
+  <link rel="preload" href="images/blur-icebg.jpg" as="image" />
+  <link rel="preload" href="images/icebg.jpg" as="image" />
+  <link rel="preload" href="images/blur-groupbg.jpg" as="image" />
+  <link rel="preload" href="images/groupbg.jpg" as="image" />
+  <link rel="preload" href="images/blur-dangerousbg.jpg" as="image" />
+  <link rel="preload" href="images/dangerousbg.jpg" as="image" />
+  <link rel="preload" href="images/blur-cars.jpg" as="image" />
+  <link rel="preload" href="images/cars.jpg" as="image" />
+  <noscript>
+    <style>.body_hide{opacity: 1 !important;}</style>
+  </noscript>
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/animate_open.js"></script>
+  <script type="text/javascript">
+    jQuery(function($) {
+      $("#phone").mask("+7 (999) 999-9999");
+      $("#phone2").mask("+7 (999) 999-9999");
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <script type="text/javascript" src="js/sticky.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="js/btnup.js"></script>
+</head>
+
+<body class="body_hide">
+  <!--==========ШАПКА==========-->
+  <header id="bg" class="header">
+    <div class="wrapper logo-wrapper">
+      <a href="index.html" class="header-logo">
+      </a>
+    </div>
+    <div class="header-line">
+      <a name="top"></a>
+      <div class="wrapper">
+        <p class="adress_header">119607, г. Москва, ул. Раменки, д.17к1</p>
+        <p class="adress_header2">Режим работы: 9:00-18:00</p>
+        <a class="adress_email" href="mailto:info@intertekh.ru">info@intertekh.ru</a>
+        <a class="header-phone1" href="skype:+74957967646?call">+7 (495) 796-76-46</a>
+        <a class="header-phone2" href="skype:+79037967646?call">+7 (903) 796-76-46</a>
+        <!--a class="header-phone3" href="javascript:void(0);">+7 (495) 890-12-34</a-->
+      </div>
+    </div>
+
+    <section class="dropmenu" id="FloatingMenu">
+      <div class="dropmenubg">
+        <div class="menu">
+          <ul class="menu-item">
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="javascript:void(0);">Виды транспортировки</a>
+                <div class="dropdown-content">
+                  <div class="drop-wrapper"></div>
+                  <div class="dropdown-body">
+                    <div class="dropdown-links1">
+                      <ul>
+                        <li><a href="rail.html">Железнодорожные грузоперевозки</a></li>
+                        <li><a href="sea.html">Морские контейнерные грузоперевозки</a></li>
+                        <li><a href="avia.html">Авиаперевозки</a></li>
+                        <li><a href="auto.html">Автомобильные грузоперевозки</a></li>
+                        <li><a class="multi" href="multi.html">Мультимодальные контейнерные грузоперевозки</a></li>
+                      </ul>
+                    </div>
+                    <div class="firstdrop">
+                      <p class="droptext">Компания ООО «Интертех» осуществляет международные грузоперевозки всеми видами транспорта, работая по всему миру.
+                        <br />Наша компания поможет Вам доставить груз наиболее удобным, безопасным и удобным способом, при этом с наименьшими затратами.
+                      </p>
+                      <img class="dropimg" src="images/transp.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="cargotype.html"><span>Типы грузов</span></a>
+                <div class="dropdown-content">
+                  <div class="drop-wrapper"></div>
+                  <div class="dropdown-body">
+                    <div class="dropdown-links2">
+                      <ul>
+                        <li><a href="cargotype.html#general">Генеральные</a></li>
+                        <li><a href="cargotype.html#container">Контейнерные</a></li>
+                        <li><a href="cargotype.html#ice">Рефрижераторные</a></li>
+                        <li><a href="cargotype.html#group">Сборные грузы</a></li>
+                        <li><a href="cargotype.html#dangerous">Опасные</a></li>
+                        <li><a href="cargotype.html#cars">Перевозка автомобилей</a></li>
+                      </ul>
+                    </div>
+                    <div class="seconddrop">
+                      <p class="droptext">Наша компания организует международную доставку всех типов грузов. <br />
+                        Для каждого груза действует индивидуальная система оценки, включающая в себя:<br />
+                        <br />
+                        <em>
+                          1. Определение наиболее оптимально схемы перевозки груза<br />
+                          2. Виды транспорта, которые будут использоваться<br />
+                          3. Характеристику груза и его особенности<br />
+                          4. Пожелания заказчика
+                        </em>
+                      </p>
+                      <img class="dropimg" src="images/gruz1.jpeg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="index.html#geo">География перевозок</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="export.html">Экспорт</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="index.html#about">О компании</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="wrapper-down"></div>
+  </header>
+
+  <!-- ///////////КОНЕЦ ШАПКИ////////////// -->
+
+  <div class="parallax">
+    <p class="blockhead"><b>Наши преимущества</b></p>
+    <div class="circles">
+      <div class="circlefirst"><img src="images/exp.png">
+        <div class="circlehead">
+          <p class="infa1">Многолетний опыт работы</p>
+        </div>
+        <p class="infa2">
+          Компания «ИНТЕРТЕХ» успешно работает в транспортно-логистической сфере уже более 15 лет имея большой и положительный опыт работы с клиентами по всему миру.</p>
+      </div>
+      <div class="circlesec"><img src="images/price.png">
+        <div class="circlehead">
+          <p class="infa12">Выгодная стоимость тарифов</p>
+        </div>
+        <p class="infa2">Наша компания имеет одни из самых <b>выгодных</b> тарифов на перевозки благодаря долгосрочным контрактам с прямыми перевозчиками и собственниками транспорта.</p>
+      </div>
+      <div class="circlethird"><img src="images/world.png">
+        <div class="circlehead">
+          <p class="infa13">Обширный спектр грузов и стран, с которыми мы работаем</p>
+        </div>
+        <p class="infa2">Мы плодотворно сотрудничаем практически со всеми странами мира, имея разветвленную сеть партнерских и агентских отношений.</p>
+      </div>
+    </div>
+  </div>
+  <!--div class="parblock"-->
+  <div class="parallax3">
+    <div class="infoblock">
+      <div class="textblock">
+        <p>
+          Наша компания работает на рынке транспортных услуг с 2003 года. В своей работе мы придерживаемся принципов профессионализма и ответственности перед каждым клиентом. Мы всегда применяем индивидуальный подход к каждому Партнеру. Наша главная
+          задача состоит в том, чтобы Вы всегда были довольны качеством и сроками оказываемых услуг, результатами и эффективностью совместной работы.
+          <br />
+          Специалисты компании ООО «Интертех» ежедневно организовывают и осуществляют воздушные, морские, железнодорожные и автомобильные перевозки как по международным направлениям, так и по территории России.
+        </p>
+      </div>
+      <div class="imgblock">
+        <img src="images/Professional-Services.jpg">
+      </div>
+    </div>
+  </div>
+
+  <!--div class="parblock"-->
+  <div class="parallax3">
+    <div class="infoblock">
+      <div class="imgblock1">
+        <img src="images/prof.jpg">
+      </div>
+      <div class="textblock">
+        <p>
+          Компания ООО «Интертех» предлагает полный спектр транспортно-логистических услуг, оказываемых на международном и национальном рынках, с обеспечением максимальной надежности, высочайшего качества обслуживания Клиентов для повышения
+          эффективности их деятельности и оптимизации затрат.
+          <br />
+          Компания ООО «Интертех» относится к бизнесу наших Клиентов с большим вниманием, стараясь удовлетворить максимум потребностей в сфере грузоперевозок.
+          <br />
+          Следуя миссии Компании, более чем за 15 лет существования мы научились качественно работать, научились строить долгосрочные партнерские отношения, открывать новые возможности для развития и роста наших Клиентов.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax1">
+    <div class="short" id="geo"></div>
+    <p class="blockhead1"><b>География грузоперевозок</b></p>
+    <div class="descriptblock">
+      <p>
+        Компания ООО «Интертех» осуществляет транспортировку грузов из стран, приведённых в блоках ниже:
+      </p>
+    </div>
+    <div class="countries">
+      <div class="colfirst">
+        <p class="colhead">Европа</p>
+        <ul>
+          <li class="GE">
+            <p>Германия</p>
+          </li>
+          <li class="FR">
+            <p>Франция</p>
+          </li>
+          <li class="IT">
+            <p>Италия</p>
+          </li>
+          <li class="ES">
+            <p>Испания</p>
+          </li>
+          <li class="PL">
+            <p>Польша</p>
+          </li>
+          <li class="CZ">
+            <p>Чехия</p>
+          </li>
+          <li class="FN">
+            <p>Финляндия</p>
+          </li>
+          <li class="CY">
+            <p>Кипр</p>
+          </li>
+        </ul>
+      </div>
+      <div class="colsec">
+        <p class="colhead">СНГ</p>
+        <ul>
+          <li class="RU">
+            <p>Россия</p>
+          </li>
+          <li class="UKR">
+            <p>Украина</p>
+          </li>
+          <li class="KZ">
+            <p>Казахстан</p>
+          </li>
+          <li class="UZ">
+            <p>Узбекистан</p>
+          </li>
+          <li class="AR">
+            <p>Армения</p>
+          </li>
+          <li class="AZ">
+            <p>Азербайджан</p>
+          </li>
+          <li class="GR">
+            <p>Грузия</p>
+          </li>
+          <li class="BL">
+            <p>Белоруссия</p>
+          </li>
+        </ul>
+      </div>
+      <div class="colthird">
+        <p class="colhead">Ближний Восток</p>
+        <ul>
+          <li class="TR">
+            <p>Турция</p>
+          </li>
+          <li class="EG">
+            <p>Египет</p>
+          </li>
+          <li class="IS">
+            <p>Израиль</p>
+          </li>
+          <li class="AE">
+            <p>ОАЭ</p>
+          </li>
+          <li class="IR">
+            <p>Иран</p>
+          </li>
+          <li class="IQ">
+            <p>Ирак</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax2">
+    <div class="countries1">
+
+      <div class="colfirst1">
+        <p class="colhead1">Азия</p>
+        <ul>
+          <li class="JP">
+            <p>Япония</p>
+          </li>
+          <li class="CH">
+            <p>Китай</p>
+          </li>
+          <li class="TH">
+            <p>Тайланд</p>
+          </li>
+          <li class="VM">
+            <p>Вьетнам</p>
+          </li>
+          <li class="SG">
+            <p>Сингапур</p>
+          </li>
+          <li class="KR">
+            <p>Южная Корея</p>
+          </li>
+          <li class="IN">
+            <p>Индия</p>
+          </li>
+        </ul>
+      </div>
+      <div class="colsec1">
+        <p class="colhead1">Северная Америка</p>
+        <ul>
+          <li class="USA">
+            <p>США</p>
+          </li>
+          <li class="MX">
+            <p>Мексика</p>
+          </li>
+          <li class="CA">
+            <p>Канада</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--div class="parblock2"   -->
+  <div id="about">
+  </div>
+  <div class="parallax4">
+    <div class="brightness">
+      <p class="blockhead2"><b>О нас</b></p>
+      <div class="infoblock">
+        <div class="textblock1">
+          <p>
+            <ul>
+              <li>Транспортно-логистическая компания «Интертех» предлагает услуги по организации международной доставки под ключ импортных и экспортных грузов в Москву и регионы России из стран дальнего и ближнего зарубежья.</li>
+              <li>Благодаря прочным партнерским отношениям с крупными авиа-, морскими- и автоперевозчиками¸ мы предлагаем наиболее взвешенные и эффективные транспортные решения исходя из индивидуальных потребностей наших клиентов.</li>
+              <li>Мы готовы предложить эффективное современное решение для доставки грузов практически в любую точку мира, в т. ч. по схеме «от двери к двери» (door-to-door) <b> с полным сопровождением </b>. Мы предлагаем отработанные схемы
+                международных грузовых перевозок морским, автомобильным и железнодорожным транспортом. </li>
+              <li>Наша компания организует международную доставку грузов всех видов, включая контейнерные, сборные, опасные и другие грузы. Схема перевозки и вид транспорта в каждом отдельном случае подбирается индивидуально, при этом учитываются
+                характеристики груза, особенности его транспортировки и требования заказчика.</li>
+              <li>Компания «Интертех» выполняет международные грузоперевозки из Европы, Китая и других стран ЮВА, Северной и Южной Америки, а также Северной Африки.</li>
+              <li>Для оптимизации сроков и стоимости доставки применяются как мультимодальные схемы доставки с использованием нескольких видов транспорта, так и доставка грузов одним типом транспорта. Компания предоставляет весь необходимый
+                транспорт
+                и транспортное оборудование как для импортных поставок, так и для организации международных грузоперевозок из Москвы и других регионов РФ в страны Европы, Америки и Азии.</li>
+              <li>Мы практикуем продуманную ценовую политику, предлагая клиентам выгодные тарифы на логистические услуги. При организации перевозок наши специалисты учитывают пожелания заказчика, предлагая оптимальные способы осуществления доставки.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--div class="parblock"-->
+  <div id="forma"></div>
+  <div class="parallax5" id="form">
+    <div class="brightness">
+      <div class="parentcenter">
+        <div id="inline">
+          <form id="contact" name="contact" action="#" method="post">
+            <h2><b>Оставить заявку</b></h2>
+            <div class="userinput">
+              <div class="usercontacts">
+                <div><input type="text" id="name" name="name" class="txt" placeholder="Ваше имя"></div>
+                <div><input type="tel" id="phone" name="phone" class="txt" placeholder="Ваш телефон"></div>
+                <div><input type="email" id="email" name="email" class="txt" placeholder="Ваш e-mail"></div>
+              </div>
+            </div>
+            <div class="userinput">
+              <div class="userinfo">
+                <div><input type="text" id="itemname" name="itemname" class="txt" placeholder="Название груза"></div>
+                <div> <input type="text" id="shipfrom" name="shipfrom" class="txt" placeholder="Место отправки"></div>
+                <div> <input type="text" id="shipto" name="shipto" class="txt" placeholder="Место доставки"></div>
+              </div>
+            </div>
+            <div class="userinput">
+              <div class="userinfo1">
+                <p><input type="number" id="itemmass" name="itemmass" class="txt" placeholder="Вес (кг)"></p>
+              </div>
+            </div>
+            <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
+            <button id="send">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax5">
+    <div class="brightness">
+      <div class="contactsblock">
+        <p class="blockhead3"><b>Контакты</b></p>
+        <div class="infoblock">
+          <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A60b1bbf9e8d1872f8b5d40cb1c67ef6383746ae7222e0d9af062f2e7872e018c&amp;source=constructor" width="465" height="490" frameborder="0"></iframe>
+          </div>
+          <div class="textblock">
+            <p class="contacttext">
+              Компания INTERTEKH LOGISTICS <br />
+
+              119607, г. Москва, ул. Раменки, д.17к1<br />
+
+              Телефон: +7 (495) 796-76-46<br />
+
+              Моб. телефон: +7 (903) 796-76-46<br />
+
+              E-mail: <a href="mailto:info@intertekh.ru">info@intertekh.ru</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a class="btnup" href="#top"><img class="imgup" src="images/up.png"></a>
+    <br />
+    <a class="btndwn" href="#forma"><img src="images/msg.png"></a>
+  </div>
+
+  <div class="footblock">
+    <div class="copyblock">
+      <div class="copytext">
+        <p>ООО «Интертех» - международная транспортная логистика и доставка грузов</p>
+      </div>
+      <div class="copytext1">
+        <p><a href="mailto:info@intertekh.ru"> info@intertekh.ru</a> </p>
+        <p> <a href="skype:+74957967646?call">+7 (495) 796-76-46</a></p>
+        <p> <a href="skype:+79037967646?call">+7 (903) 796-76-46</a></p>
+      </div>
+      <div class="copytext2">
+        <ul class="social">
+          <p>Наши социальные сети:</p>
+          <!--li><a rel="nofollow" target="_blank" href="" title="Следуйте за нами в Twitter"><i class="icon-TWITTER"></i></a></li>
+        <li><a rel="nofollow" target="_blank" href="" title="Официальная группа VK"><i class="icon-VK"></i></a></li>
+        <li><a rel="nofollow" target="_blank" href="" title="Официальная страница в Facebook"><i class="icon-FB"></i></a></li-->
+          <li id="firstsoc"><a rel="nofollow" target="_blank" href="https://www.instagram.com/intertekh/" title="Официальная страница в Instagram"><img class="soc-icon" src="images/logoIG.png"></a></li>
+          <li><a class="icon-skype" rel="nofollow" target="_blank" href="skype:incotectsm?chat" title="Профиль Skype"><img class="soc-icon" src="images/logoskype.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

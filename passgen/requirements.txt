@@ -1,0 +1,4 @@
+colorama==0.4.4
+colored==1.4.2
+termcolor==1.1.0
+pyperclip==1.8.2

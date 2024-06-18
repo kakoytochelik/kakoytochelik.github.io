@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Типы грузов - InterTekh Logistics</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="images/logo.png" as="image" />
+  <link rel="preload" href="images/general.jpg" as="image" />
+  <link rel="preload" href="images/blur-general.jpg" as="image" />
+  <link rel="preload" href="images/blur-cargobg.jpg" as="image" />
+  <link rel="preload" href="images/cargobg.jpg" as="image" />
+  <link rel="preload" href="images/blur-icebg.jpg" as="image" />
+  <link rel="preload" href="images/icebg.jpg" as="image" />
+  <link rel="preload" href="images/blur-groupbg.jpg" as="image" />
+  <link rel="preload" href="images/groupbg.jpg" as="image" />
+  <link rel="preload" href="images/blur-dangerousbg.jpg" as="image" />
+  <link rel="preload" href="images/dangerousbg.jpg" as="image" />
+  <link rel="preload" href="images/blur-cars.jpg" as="image" />
+  <link rel="preload" href="images/cars.jpg" as="image" />
+
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+  
+
+  <script type="text/javascript">
+    jQuery(function($) {
+      $("#phone").mask("+7 (999) 999-9999");
+      $("#phone2").mask("+7 (999) 999-9999");
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+  <script type="text/javascript" src="js/sticky.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="js/btnup.js"></script>
+  <script type="text/javascript" src="js/change-bg-cargo.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body class="cargo">
+  <!--==========ШАПКА==========-->
+  <header id="bg" class="header">
+    <div class="wrapper logo-wrapper">
+      <a href="index.html" class="header-logo">
+      </a>
+    </div>
+    <div class="header-line">
+      <a name="top"></a>
+      <div class="wrapper">
+        <p class="adress_header">119607, г. Москва, ул. Раменки, д.17к1</p>
+        <p class="adress_header2">Режим работы: 9:00-18:00</p>
+        <a class="adress_email" href="mailto:info@intertekh.ru">info@intertekh.ru</a>
+        <a class="header-phone1" href="skype:+74957967646?call">+7 (495) 796-76-46</a>
+        <a class="header-phone2" href="skype:+79037967646?call">+7 (903) 796-76-46</a>
+        <!--a class="header-phone3" href="javascript:void(0);">+7 (495) 890-12-34</a-->
+      </div>
+    </div>
+
+    <section class="dropmenu" id="FloatingMenu">
+      <div class="dropmenubg">
+        <div class="menu">
+          <ul class="menu-item">
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="javascript:void(0);">Виды транспортировки</a>
+                <div class="dropdown-content">
+                  <div class="drop-wrapper"></div>
+                  <div class="dropdown-body">
+                    <div class="dropdown-links1">
+                      <ul>
+                        <li><a href="rail.html">Железнодорожные грузоперевозки</a></li>
+                        <li><a href="sea.html">Морские контейнерные грузоперевозки</a></li>
+                        <li><a href="avia.html">Авиаперевозки</a></li>
+                        <li><a href="auto.html">Автомобильные грузоперевозки</a></li>
+                        <li><a class="multi" href="multi.html">Мультимодальные контейнерные грузоперевозки</a></li>
+                      </ul>
+                    </div>
+                    <div class="firstdrop">
+                      <p class="droptext">Компания ООО «Интертех» осуществляет международные грузоперевозки всеми видами транспорта, работая по всему миру.
+                        <br />Наша компания поможет Вам доставить груз наиболее удобным, безопасным и удобным способом, при этом с наименьшими затратами.
+                      </p>
+                      <img class="dropimg" src="images/transp.jpg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="cargotype.html">Типы грузов</a>
+                <div class="dropdown-content">
+                  <div class="drop-wrapper"></div>
+                  <div class="dropdown-body">
+                    <div class="dropdown-links2">
+                      <ul>
+                        <li><a href="cargotype.html#general">Генеральные</a></li>
+                        <li><a href="cargotype.html#container">Контейнерные</a></li>
+                        <li><a href="cargotype.html#ice">Рефрижераторные</a></li>
+                        <li><a href="cargotype.html#group">Сборные грузы</a></li>
+                        <li><a href="cargotype.html#dangerous">Опасные</a></li>
+                        <li><a href="cargotype.html#cars">Перевозка автомобилей</a></li>
+                      </ul>
+                    </div>
+                    <div class="seconddrop">
+                      <p class="droptext">Наша компания организует международную доставку всех типов грузов. <br />
+                        Для каждого груза действует индивидуальная система оценки, включающая в себя:<br />
+                        <br />
+                        <em>
+                          1. Определение наиболее оптимально схемы перевозки груза<br />
+                          2. Виды транспорта, которые будут использоваться<br />
+                          3. Характеристику груза и его особенности<br />
+                          4. Пожелания заказчика
+                        </em>
+                      </p>
+                      <img class="dropimg" src="images/gruz1.jpeg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="index.html#geo">География перевозок</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="export.html">Экспорт</a>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="fakelink" href="index.html#about">О компании</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="wrapper-down"></div>
+  </header>
+
+  <!-- ///////////КОНЕЦ ШАПКИ////////////// -->
+
+  <div class="parallax-general">
+    <div class="short" id="general">
+    </div>
+    <div class="cargoinfo">
+      <p class="head-cargo1"><b>Генеральные грузы</b></p>
+      <div class="text-cargo1">
+        <p>
+          Под «генеральным грузом», как правило, понимают штучный товар или штучную продукцию, перевозимую в упаковке различных типов: в ящиках, в мешках, бигбэгах, бочках, пакетах, тюках, контейнерах и прочих. <br />
+
+          Ввиду столь большого объема и массы генеральные транспортировки грузов требуют от перевозчика повышенной ответственности. Как правило, грузы такого рода предназначены для сферы строительства или промышленности. Они могут иметь упаковку
+          или
+          быть рассыпными; также генеральными грузами считаются те товары, которые требуют укрепленных мест при перемещении. Перед тем как начать перевозку, грузы обрабатываются и приводятся в надлежащий вид, а сама партия оформляется в письменном
+          виде.<br />
+
+          К генеральным грузам относятся: обычные и длинномерные, негабаритные и тяжеловесные грузы, катно-бочковые, подвижная техника, металлопродукция и т. д. Тарно-штучные — это грузы, упакованные в отдельную тару (коробки, ящики, мешки, тюки).
+          Также к генеральным грузам относятся железобетонные изделия, лесоматериалы, конструкции из металла и другие крупные объекты. Контейнеры и большие грузы, перевозимые в мешках (например, удобрения), тоже считаются генеральными грузами.<br />
+          Грузы могут быть абсолютно различные по форме, и самое главное - по весу.
+          <br />
+          <br />
+          <br />
+          <br />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cargoinfo">
+    <p class="semihead"><b>Что относится к генеральным грузам:</b></p>
+    <div class="text-cargo1">
+      <ul>
+        <li>Удобрения и концентраты. Такая продукция перевозится в любом агрегатном состоянии: жидком, твердом, порошкообразном; </li>
+        <li> Металлопродукция. Это, например, проволока, заготовки, ленточный металл, листовой металл, металлолом, слитки и другая подобная продукция; </li>
+        <li> Технические средства, способные к передвижению. Например, гусеничным методом; </li>
+        <li> Железобетонные. К примеру, панели, колонны, плиты, кольца, шпалы и подобное; </li>
+        <li> Лесоматериалы. Это пиломатериалы, древесная плита, щепа, фанера; </li>
+        <li> Руды цветных металлов; </li>
+        <li> Продукция бумажной промышленности; </li>
+        <li> Продукция химической отрасли; </li>
+        <li> И прочее. </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="parallax-general1">
+    <div class="cargoinfo">
+      <div class="text-cargo1">
+        <p>Основой для разработки технологии перевозки является глубокое знание специалистом свойств и особенностей конкретного груза, проявление которых возможно в процессе транспортировки под воздействием различных внешних
+          факторов. Организация доставки, в частности выбор маршрута и разновидности транспорта, производится на основании:</p>
+        <ul>
+          <li>разновидности и характеристик продукции;</li>
+          <li>наличия особых требований к операциям погрузки/выгрузки, хранения, транспортировки; </li>
+          <li>пожеланий клиента относительно транзитных сроков и финансовых затрат на перевозку. </li>
+        </ul>
+        <p>К перевозкам генеральных грузов привлекаются различные виды транспорта – автомобильный, железнодорожный, морской и авиационный. Цена доставки рассчитывается на основании разновидности транспортируемой продукции, выбранной логистической
+          схемы и других факторов.<br />
+          Наша компания перевозит крупно-, средне- и малогабаритные товары, а также продукцию специального назначения.<br />
+          Обратившись к нам, Вы сможете перевезти груз с максимальной эффективностью. Наш опыт, позволяет нам профессионально и быстро осуществлять международную доставку грузов любой категории сложности, в т.ч. негабаритных и тяжеловесных грузов.
+          <br /><br />
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-general1">
+    <div class="short" id="container">
+    </div>
+    <div class="cargoinfo">
+      <p class="head-cargo1"><b>Контейнерные грузы</b></p>
+      <div class="text-cargo1">
+        <ul>
+          <li>Сегодня контейнерные перевозки заслуженно являются одним из самых популярных способов доставки различных грузов по России и по всему миру. Основным достоинством данного метода транспортировки товаров является то, что все контейнеры
+            обладают стандартными размерами, что позволяет применять любые виды транспорта. Именно удобство работы с контейнерными перевозками груза обеспечило им такое широкое распространение и высокую популярность. </li>
+          <li>Важно и то, что использование контейнера гарантирует сохранность груза — он пломбируется в присутствии отправителя, а снятие пломбы происходит лишь в конечном пункте назначения, под контролем получателя. Всё это делает данный вид
+            мультимодальных международных грузоперевозок отлично подходящим для доставки товаров в любую точку мира.</li>
+          <li>В контейнерах осуществляются перевозки как генеральных грузов, так и грузов, имеющих класс опасности, а также негабаритных и тяжеловесных грузов, грузов с необходимостью поддержания температурного режима.</li>
+          <li>Различные типы контейнеров обеспечивают возможность перевозки различных грузов, основываясь на различных типах контейнерного оборудования.</li>
+          <li>В распоряжении нашей компании имеются все типы контейнеров, представленные на контейнерном рынке перевозок, включая спецоборудования типа Flat Rack и Open Top.<br /><br /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-general1">
+    <div class="short" id="ice">
+    </div>
+    <div class="cargoinfo">
+      <p class="head-cargo1"><b>Рефрижераторные грузы</b></p>
+      <div class="text-cargo1">
+        <ul>
+          <li>Сервис перевозки продукции, требуемой поддержания температурного режима в пути следования, соответствует международным стандартам и включает в себя весь комплекс услуг по транспортно-экспедиторскому обслуживанию режимных грузов в
+            рефрижераторных контейнерах с использованием морского, железнодорожного и автомобильного транспорта.</li>
+          <li>Штат сотрудников и технический персонал Компании представлен специалистами, имеющими большой опыт работы в области транспортного экспедирования рефрежираторных грузов.</li>
+          <li>Компания является экспедитором ведущих перевозчиков, собственников рефрежираторных контейнеров, имеет Договорные отношения с СВХ, занимающихся переработкой грузов, требующих соблюдения температурного режима. <br /><br /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-general1">
+    <div class="short" id="group">
+    </div>
+    <div class="cargoinfo">
+      <p class="head-cargo1"><b>Сборные грузы</b></p>
+      <div class="text-cargo1">
+        <ul>
+          <li>LCL — популярный вид сервиса, особенно востребованный, когда необходимо быстро и безопасно доставить небольшое количество груза не переплачивая за отдельный контейнер.</li>
+          <li>Заказывая сервис сборных грузов, вы оплачиваете доставку вашего груза совместно с грузами других клиентов экспедитора. При этом грузы аккуратно упаковываются и загружаются в один контейнер, а стоимость доставки делится между всеми
+            грузовладельцами пропорционально весу или объему каждого отдельного груза.</li>
+          <li>Сервис сборных грузов — идеальное решение для малого и среднего бизнеса. Это удобный и экономичный способ транспортировки грузов небольшого размера и небольших партий грузов.<br /><br /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-general1">
+    <div class="short" id="dangerous">
+    </div>
+    <div class="cargoinfo">
+      <p class="head-cargo1"><b>Опасные грузы</b></p>
+      <p class="semihead"><br /><b>Специфика перевозки опасных грузов</b></p>
+      <div class="text-cargo1">
+        <p>
+          При организации перевозки грузов, относящихся к опасным, правила транспортировки применяются в соответствии с их классом.
+          <br />
+          Опасный груз по территории России перевозится на специализированном автотранспорте. Для данных целей может быть использован полуприцеп, автоцистерны, танк-контейнеры. Выбор транспорта осуществляется с учетом особенностей веществ и грузов.
+        </p>
+        <p class="semihead"><br /><br /><b>Классификация опасных грузов</b></p>
+        <ol type="I">
+          <li>Взрывчатые вещества;</li>
+          <li>Газы (сжиженные, сжатые, растворенные под давлением, ядовитые и горючие);</li>
+          <li>Легковоспламеняющаяся жидкость;</li>
+          <li>Твердые вещества и грузы легковоспламеняющиеся или самовозгорающиеся, а также выделяющие при взаимодействии с водой воспламеняющийся газ;</li>
+          <li>Органические пероксиды и окисляющие вещества;</li>
+          <li>Инфекционные и ядовитые вещества и грузы;</li>
+          <li>Радиоактивные (без разделения на подклассы);</li>
+          <li>Коррозионные и едкие вещества;</li>
+          <li>Грузы, которые могут быть опасны, не отнесенные к другим классам.<br /><br /></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-general1">
+    <div class="short" id="cars">
+    </div>
+    <div class="cargoinfo">
+      <p class="head-cargo1"><b>Перевозка автомобилей</b></p>
+      <div class="text-cargo1">
+        <p>Международная перевозка автомобилей возможность воспользоваться собственным автотранспортом в любой точке мира, не прибегая к услуге дорогостоящего проката / аренды машины. Компания имеет большой опыт перевозок автомобилей из России в
+          Европу и другие страны с предоставление услуг по соблюдению таможенного режима временного вывоза, а также перевозки автомобилей для постоянного пользования за территорией РФ.<br /><br />
+
+          Доставка осуществляется автовозами, крытыми автовозами для предотвращения загрязнений и повреждений, в специально оборудованных контейнерах.<br /><br />
+
+          Воспользовавшись услугой транспортировки автомобиля за границу, вы сможете существенно сэкономить время и сделать свое путешествие максимально комфортным. Вам не придется самостоятельно преодолевать сотни километров на автомобиле. Мы
+          предлагаем возможность отправиться в Европу удобным для вас способом и забрать свою машину в любом выбранном вами городе.<br /><br /></p>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax6" id="form">
+    <div class="parentcenter">
+      <div id="inline">
+        <div class="short" id="forma"></div>
+        <form id="contact" name="contact" action="#" method="post">
+          <h2><b>Оставить заявку</b></h2>
+          <div class="userinput">
+            <div class="usercontacts">
+              <div><input type="text" id="name" name="name" class="txt" placeholder="Ваше имя"></div>
+              <div><input type="tel" id="phone" name="phone" class="txt" placeholder="Ваш телефон"></div>
+              <div><input type="email" id="email" name="email" class="txt" placeholder="Ваш e-mail"></div>
+            </div>
+          </div>
+          <div class="userinput">
+            <div class="userinfo">
+              <div><input type="text" id="itemname" name="itemname" class="txt" placeholder="Название груза"></div>
+              <div> <input type="text" id="shipfrom" name="shipfrom" class="txt" placeholder="Место отправки"></div>
+              <div> <input type="text" id="shipto" name="shipto" class="txt" placeholder="Место доставки"></div>
+            </div>
+          </div>
+          <div class="userinput">
+            <div class="userinfo1">
+              <p><input type="number" id="itemmass" name="itemmass" class="txt" placeholder="Вес (кг)"></p>
+            </div>
+          </div>
+          <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
+          <button id="send">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a class="btnup" href="#top"><img class="imgup" src="images/up.png"></a>
+    <br />
+    <a class="btnhome" href="index.html"><img src="images/home.png"></a>
+    <br />
+    <a class="btndwn" href="#forma"><img src="images/msg.png"></a>
+  </div>
+
+  <div class="footblock">
+    <div class="copyblock">
+      <div class="copytext">
+        <p>ООО «Интертех» - международная транспортная логистика и доставка грузов</p>
+      </div>
+      <div class="copytext1">
+        <p><a href="mailto:info@intertekh.ru"> info@intertekh.ru</a> </p>
+        <p> <a href="skype:+74957967646?call">+7 (495) 796-76-46</a></p>
+        <p> <a href="skype:+79037967646?call">+7 (903) 796-76-46</a></p>
+      </div>
+      <div class="copytext2">
+        <ul class="social">
+          <p>Наши социальные сети:</p>
+          <!--li><a rel="nofollow" target="_blank" href="" title="Следуйте за нами в Twitter"><i class="icon-TWITTER"></i></a></li>
+        <li><a rel="nofollow" target="_blank" href="" title="Официальная группа VK"><i class="icon-VK"></i></a></li>
+        <li><a rel="nofollow" target="_blank" href="" title="Официальная страница в Facebook"><i class="icon-FB"></i></a></li-->
+          <li id="firstsoc"><a rel="nofollow" target="_blank" href="https://www.instagram.com/intertekh/" title="Официальная страница в Instagram"><img class="soc-icon" src="images/logoIG.png"></a></li>
+          <li><a class="icon-skype" rel="nofollow" target="_blank" href="skype:incotectsm?chat" title="Профиль Skype"><img class="soc-icon" src="images/logoskype.png"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
